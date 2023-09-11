@@ -118,7 +118,7 @@ export default function Header() {
               </Popover.Button>
             </div>
             <Popover.Group as="nav" className="hidden space-x-10 md:flex">
-              <Popover className="relative">
+              <Popover>
                 {({ open }) => (
                   <>
                     <Popover.Button
@@ -146,7 +146,7 @@ export default function Header() {
                       leaveFrom="opacity-100 translate-y-0"
                       leaveTo="opacity-0 translate-y-1"
                     >
-                      <Popover.Panel className="absolute z-10 -ml-4 mt-3 w-screen transform px-2 sm:px-0 lg:ml-0">
+                      <Popover.Panel className="absolute z-10 w-screen transform px-2 sm:px-0 left-0 w-[90%] m-auto">
                         <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                           <div className="relative grid grid-cols-5 bg-white px-5 py-6 sm:p-8">
                             {menus.map((item) => (
