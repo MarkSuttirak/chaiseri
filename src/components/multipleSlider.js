@@ -1,6 +1,6 @@
 import { useRef, useEffect, useState } from "react";
 
-const MultiSlider = ({resources}) => {
+const MultiSlider = ({resources, withTitle}) => {
   const maxScrollWidth = useRef(0);
   const [currentIndex, setCurrentIndex] = useState(0);
   const carousel = useRef(null);
@@ -100,6 +100,11 @@ const MultiSlider = ({resources}) => {
           {resources.map((resource, index) => {
             return (
               <div className="flex flex-col">
+                {withTitle && (
+                  <h3 className="py-6 px-3 mx-auto text-xl">
+                    {resource.title}
+                  </h3>
+                )}
                 <div
                   key={index}
                   className="carousel-item text-center relative w-80 h-80 snap-start"
@@ -116,9 +121,15 @@ const MultiSlider = ({resources}) => {
                     />
                   </a>
                 </div>
-                <h3 className="py-6 px-3 mx-auto text-xl">
-                  {resource.title}
-                </h3>
+                {withTitle ? (
+                  <h3 className="py-6 px-3 mx-auto text-xl">
+                    {resource.desc}
+                  </h3>
+                ) : (
+                  <h3 className="py-6 px-3 mx-auto text-xl">
+                    {resource.title}
+                  </h3>
+                )}
               </div>
             );
           })}
