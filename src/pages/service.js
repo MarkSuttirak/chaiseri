@@ -15,7 +15,7 @@ const Service = () => {
       <main>
         <section className='h-[520px] flex items-center mb-[50px]' style={{background:`url('https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80')`,backgroundSize:'cover'}}>
           <div className="container mx-auto max-w-[1200px] px-6 text-right">
-            <h1 className="text-white text-6xl">UPGRADING</h1>
+            <h1 className="text-white text-6xl font-bold">UPGRADING</h1>
           </div>
         </section>
 

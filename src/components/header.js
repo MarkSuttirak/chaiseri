@@ -262,7 +262,7 @@ export default function Header() {
               <a href="/service" className="text-base font-medium text-gray-500 hover:text-gray-900">
                 Service
               </a>
-              <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+              <a href="/news-media" className="text-base font-medium text-gray-500 hover:text-gray-900">
                 News & Media
               </a>
               <a href="/contact-us" className="text-base font-medium text-gray-500 hover:text-gray-900">
