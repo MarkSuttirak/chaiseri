@@ -140,7 +140,7 @@ export default function Header() {
         <div className="mx-auto">
           <div className="flex items-center justify-between border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10 px-6">
             <div className="flex justify-start lg:w-0 lg:flex-1">
-              <a href="#">
+              <a href="/">
                 <span className="sr-only">Your Company</span>
                 <img
                   className="h-8 w-auto sm:h-10"
@@ -265,7 +265,7 @@ export default function Header() {
               <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
                 News & Media
               </a>
-              <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+              <a href="/contact-us" className="text-base font-medium text-gray-500 hover:text-gray-900">
                 Contact
               </a>
               <button onClick={() => setOpen(true)} className="text-base font-medium text-gray-500 hover:text-gray-900">
