@@ -114,7 +114,6 @@ const HomePage = () => {
         </article>
 
         <div className="bg-white">
-          <h2 className="sr-only">Our perks</h2>
           <div className="mx-auto max-w-7xl divide-y divide-gray-200 lg:flex lg:justify-center lg:divide-y-0 lg:divide-x lg:py-8">
             <div className="py-8 lg:w-1/3 lg:flex-none lg:py-0">
               <div className="mx-auto flex max-w-xs items-center px-4 lg:max-w-none lg:px-8">
