@@ -36,24 +36,24 @@ body {
 
 .col1 {
 
-    background-image: url(https://chaiseri-defense.com/wp-content/uploads/2022/07/M911-1.png);
+    background-image: url('img/M911-1.png');
     
 }
 .col2 {
 
-    background-image: url(https://chaiseri-defense.com/wp-content/uploads/2022/07/Runflat-01-1.png);
+    background-image: url('img/Runflat-01-1.png');
 }
 .col3 {
 
-    background-image: url(https://chaiseri-defense.com/wp-content/uploads/2022/07/First-WIn-2-1.png);
+    background-image: url('img/First-WIn-2-1.png');
 }
 .col4 {
 
-    background-image: url(https://chaiseri-defense.com/wp-content/uploads/2022/07/IMG_8151-copy-1.png);
+    background-image: url('img/IMG_8151-copy-1.png');
 }
 .col5 {
 
-    background-image: url(https://chaiseri-defense.com/wp-content/uploads/2022/10/system-integration.png);
+    background-image: url('img/system-integration.png');
 }
 
 .col::before {
