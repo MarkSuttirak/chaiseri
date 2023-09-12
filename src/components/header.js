@@ -19,9 +19,6 @@ import { MagnifyingGlassIcon } from '@heroicons/react/20/solid'
 import LogoCHAISERI from "../img/Logo-CHAISERI-2.png";
 import M911 from "../img/M911-1.png";
 
-
-
-
 const menus = [
   {
     name: 'SYSTEM INTEGRATION',
@@ -150,7 +147,7 @@ export default function Header() {
         <div className="mx-auto">
           <div className="flex items-center justify-between border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10 px-6">
             <div className="flex justify-start lg:w-0 lg:flex-1">
-              <a href="#">
+              <a href="/">
                 <span className="sr-only">Your Company</span>
                 <img
                   className="h-8 w-auto sm:h-12"
@@ -269,13 +266,13 @@ export default function Header() {
                 )}
               </Popover>
 
-              <a href="#" className="text-xl font-semibold uppercase text-black hover:text-black">
+              <a href="/service" className="text-base font-medium text-gray-500 hover:text-gray-900">
                 Service
               </a>
-              <a href="#" className="text-xl font-semibold uppercase text-black hover:text-black">
+              <a href="/news-media" className="text-base font-medium text-gray-500 hover:text-gray-900">
                 News & Media
               </a>
-              <a href="#" className="text-xl font-semibold uppercase text-black hover:text-black">
+              <a href="/contact-us" className="text-base font-medium text-gray-500 hover:text-gray-900">
                 Contact
               </a>
               <button onClick={() => setOpen(true)} className="text-xl font-semibold uppercase text-black hover:text-black">
