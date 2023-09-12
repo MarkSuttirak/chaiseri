@@ -63,6 +63,27 @@ const awards = [
   }
 ]
 
+const awardsTwo = [
+  {
+    year: '2015',
+    desc: 'Quality Management System Standard',
+    source:
+      'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
+  },
+  {
+    year: '2015',
+    desc: 'Environmental Management System Standard',
+    source:
+      'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
+  },
+  {
+    year: '2018',
+    desc: 'Health Safety Management System Standard',
+    source:
+      'https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80',
+  },
+]
+
 const AboutUs = () => {
   const items = [
     {
@@ -72,19 +93,83 @@ const AboutUs = () => {
     },
     {
       imageUrl: "https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1536&q=80",
-      title: "System Integration",
+      title: "IP CHAMPION 2013",
+      desc: 'In Patent From Department Of Intellectual Property'
     },
     {
       imageUrl: "https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1536&q=80",
-      title: "System Integration",
+      title: "IP CHAMPION 2019",
+      desc: (
+        <>
+          Excellence Intellectual Property<br/>
+          Category: Industrial Design (Large <br/>Enterprises And State Enterprises)<br/>
+          From Department Of Intellectual Property
+        </>
+      )
     },
     {
       imageUrl: "https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1536&q=80",
-      title: "System Integration",
+      title: "ASEAN BUSINESS AWARD 2019",
+      desc: (
+        <>
+          In The Field Of Automotion (Mid-Tier)<br/>
+          From ASEAN Business Advisory Council:<br/>
+          ASEAN-BAC
+        </>
+      )
     },
     {
       imageUrl: "https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1536&q=80",
-      title: "System Integration",
+      title: "International Defense Exhibition (IDEX2005)",
+      desc: (
+        <>
+          Most Promising Award During<br/>
+          International Defense Exhibition (IDEX2005) From Shaikh<br/>
+          Nahyan Bin Zayed Al Nahyah
+        </>
+      )
+    },
+    {
+      imageUrl: "https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1536&q=80",
+      title: "THAILAND BRAND",
+      desc: (
+        <>
+          Chaiseri Qualify And Received Logo "Thailand<br/>
+          Brand" From Department Of Export<br/>
+          Promotion, Ministry Of Commerce
+        </>
+      )
+    },
+    {
+      imageUrl: "https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1536&q=80",
+      title: "CSR-DIW AWARD 2020",
+      desc: (
+        <>
+          In Continue To Hold Activities For Society,<br/>
+          Communities And Environment<br/>
+          From Department Of Industrial Works
+        </>
+      )
+    },
+    {
+      imageUrl: "https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1536&q=80",
+      title: "GREEN INDUSTRY LEVEL 2",
+      desc: (
+        <>
+          Green Industry Level 2<br/>
+          From Ministry Of Industry<br/>
+        </>
+      )
+    },
+    {
+      imageUrl: "https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1536&q=80",
+      title: "GREEN INDUSTRY LEVEL 2",
+      desc: (
+        <>
+          Green Industry Level 2<br/>
+          From Ministry Of Industry<br/>
+        </>
+      )
     },
   ]
 
@@ -219,8 +304,22 @@ const AboutUs = () => {
           </div>
         </section>
 
+        <section className="px-6 bg-black">
+          <MultiSlider resources={items} withTitle={true} titleColor="#D73A32" descColor="white"/>
+        </section>
+
         <section className="container mx-auto max-w-[1600px] px-6 m-[120px]">
-          <MultiSlider resources={items} withTitle={true}/>
+          <ul role="list" className="grid grid-cols-1 lg:grid-cols-3 gap-x-5 gap-y-10">
+            {awardsTwo.map((award) => (
+              <li key={award.source} className="relative flex flex-col gap-y-3">
+                <div className="group block w-full overflow-hidden rounded-lg">
+                  <img src={award.source} alt="" className="pointer-events-none"/>
+                </div>
+                <h2 className="font-semibold tracking-tight text-center text-2xl">{award.year}</h2>
+                <p className="pointer-events-none block text-sm text-center font-medium text-gray-500">{award.desc}</p>
+              </li>
+            ))}
+          </ul>
         </section>
       </main>
       <Footer />

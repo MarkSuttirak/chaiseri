@@ -1,6 +1,6 @@
 import { useRef, useEffect, useState } from "react";
 
-const MultiSlider = ({resources, withTitle}) => {
+const MultiSlider = ({resources, withTitle, titleColor = 'black', descColor = 'black'}) => {
   const maxScrollWidth = useRef(0);
   const [currentIndex, setCurrentIndex] = useState(0);
   const carousel = useRef(null);
@@ -101,7 +101,7 @@ const MultiSlider = ({resources, withTitle}) => {
             return (
               <div className="flex flex-col">
                 {withTitle && (
-                  <h3 className="py-6 px-3 mx-auto text-xl">
+                  <h3 className="py-6 px-3 mx-auto text-xl" style={{color:titleColor}}>
                     {resource.title}
                   </h3>
                 )}
@@ -122,11 +122,11 @@ const MultiSlider = ({resources, withTitle}) => {
                   </a>
                 </div>
                 {withTitle ? (
-                  <h3 className="py-6 px-3 mx-auto text-xl">
+                  <h3 className="py-6 px-3 mx-auto text-xl" style={{color:descColor}}>
                     {resource.desc}
                   </h3>
                 ) : (
-                  <h3 className="py-6 px-3 mx-auto text-xl">
+                  <h3 className="py-6 px-3 mx-auto text-xl" style={{color:titleColor}}>
                     {resource.title}
                   </h3>
                 )}
