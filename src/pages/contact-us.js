@@ -16,7 +16,7 @@ const ContactUs = () => {
           <form action='#' method="POST">
             <div className="flex flex-col gap-y-5">
               <div className="flex items-center w-full">
-                <label htmlFor="topic" className="block w-[180px] font-bold text-lg">
+                <label htmlFor="topic" className="block w-[200px] font-bold text-lg">
                   Topic
                 </label>
                 <div className="mt-1 w-full">
@@ -310,7 +310,7 @@ const ContactUs = () => {
                     <option value="Kiribati">Kiribati</option>
                     <option value="Kuwait">Kuwait</option>
                     <option value="Kyrgyzstan">Kyrgyzstan</option>
-                    <option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option>
+                    <option value="Laos">Laos</option>
                     <option value="Latvia">Latvia</option>
                     <option value="Lebanon">Lebanon</option>
                     <option value="Lesotho">Lesotho</option>
