@@ -72,9 +72,13 @@ const HomePage = () => {
       </section>
 
       <section className="text-center container mx-auto pt-20 pb-[50px]">
-        <h3>CHAISERI</h3>
-        <h1 className="font-bold text-3xl mb-2 text-[#D73A32]">OUR PRODUCTS</h1>
-        <p>Chaiseri is a Thai company specialize in Defense Land system for Armored vehicle, <br/>Tracks system, Runflat, and maintenance, upgrading service for military vehicle.</p>
+        <div className="mx-auto max-w-2xl sm:text-center">
+          <h2 className="text-lg font-semibold leading-8 tracking-tight">CHAISERI</h2>
+          <p className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl text-[#D73A32]">OUR PRODUCTS</p>
+          <p className="mt-6 text-lg leading-8 text-gray-600">
+            Chaiseri is a Thai company specialize in Defense Land system for Armored vehicle, <br/>Tracks system, Runflat, and maintenance, upgrading service for military vehicle.
+          </p>
+        </div>
       </section>
 
       <section className="text-center container mx-auto pt-20 pb-[50px]">
@@ -82,6 +86,7 @@ const HomePage = () => {
       </section>
 
       <section className="text-center container mx-auto pt-20 pb-[50px]">
+        <h2 className="text-lg font-semibold leading-8 tracking-tight text-indigo-600">CHAISERI</h2>
         <h1 className="font-bold text-3xl mb-2 text-[#D73A32] pb-[50px]">UPGRADING MILITARY VEHICLE</h1>
 
         <div className="flex w-full justify-center gap-x-5">
