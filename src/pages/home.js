@@ -73,40 +73,40 @@ const HomePage = () => {
         </section>
 
         <section>
-          <div className="flex w-full">
-            <div className="h-[480px] w-[18%]">
+          <div className="flex flex-wrap w-full">
+            <div className="h-[480px] lg:w-[18%]">
               <img
                 src={imagesBanner[0]}
                 alt=""
-                className="h-full object-cover"
+                className="h-full object-cover w-full"
               />
             </div>
-            <div className="h-[480px] w-[18%]">
+            <div className="h-[480px] lg:w-[18%]">
               <img
                 src={imagesBanner[1]}
                 alt=""
-                className="h-full object-cover"
+                className="h-full object-cover w-full"
               />
             </div>
-            <div className="h-[480px] w-[28%]">
+            <div className="h-[480px] lg:w-[28%]">
               <img
                 src={imagesBanner[2]}
                 alt=""
-                className="h-full object-cover"
+                className="h-full object-cover w-full"
               />
             </div>
-            <div className="h-[480px] w-[18%]">
+            <div className="h-[480px] lg:w-[18%]">
               <img
                 src={imagesBanner[3]}
                 alt=""
-                className="h-full object-cover"
+                className="h-full object-cover w-full"
               />
             </div>
-            <div className="h-[480px] w-[18%]">
+            <div className="h-[480px] lg:w-[18%]">
               <img
                 src={imagesBanner[4]}
                 alt=""
-                className="h-full object-cover"
+                className="h-full object-cover w-full"
               />
             </div>
           </div>
