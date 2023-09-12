@@ -1,3 +1,70 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+
+body {
+    font-family: 'Barlow', sans-serif;
+    overflow-x: hidden;
+}
+
+.beforeAfterImg {
+    background-position: 50% !important;
+    background-size: cover !important;
+}
+
+.chaiseriSuccessSec {
+    background-image:url('img/map.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.awardsRightInnserSec {
+    transform: translateX(-16%);
+    width: 120%;
+}
+
+.col {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-color: black;
+}
+
+.col1 {
+
+    background-image: url('img/M911-1.png');
+    
+}
+.col2 {
+
+    background-image: url('img/Runflat-01-1.png');
+}
+.col3 {
+
+    background-image: url('img/First-WIn-2-1.png');
+}
+.col4 {
+
+    background-image: url('img/IMG_8151-copy-1.png');
+}
+.col5 {
+
+    background-image: url('img/system-integration.png');
+}
+
+.col::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.35); /* Black with 35% opacity */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: inherit; /* Inherit the opacity from the parent */
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap');
