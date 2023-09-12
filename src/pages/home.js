@@ -40,8 +40,12 @@ const HomePage = () => {
     <ImgSlider />
     <main>
       <section className="text-center container mx-auto pt-20 pb-[35px]">
-        <h1 className="font-bold text-3xl mb-2 text-[#D73A32]">CHAISERI</h1>
-        <p>Celebrating 50 years Reliable and Trusted partner in Defense Land system</p>
+        <div className="mx-auto max-w-[800px] sm:text-center">
+          <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl text-[#D73A32]">CHAISERI</h2>
+          <p className="mt-6 text-lg leading-8 text-gray-600">
+            Celebrating 50 years Reliable and Trusted partner in Defense Land system
+          </p>
+        </div>
       </section>
 
       <section>
@@ -72,7 +76,7 @@ const HomePage = () => {
       </section>
 
       <section className="text-center container mx-auto pt-20 pb-[50px]">
-        <div className="mx-auto max-w-2xl sm:text-center">
+        <div className="mx-auto max-w-[800px] sm:text-center">
           <h2 className="text-lg font-semibold leading-8 tracking-tight">CHAISERI</h2>
           <p className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl text-[#D73A32]">OUR PRODUCTS</p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
@@ -86,9 +90,7 @@ const HomePage = () => {
       </section>
 
       <section className="text-center container mx-auto pt-20 pb-[50px]">
-        <h2 className="text-lg font-semibold leading-8 tracking-tight text-indigo-600">CHAISERI</h2>
-        <h1 className="font-bold text-3xl mb-2 text-[#D73A32] pb-[50px]">UPGRADING MILITARY VEHICLE</h1>
-
+        <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl text-[#D73A32] mb-[50px]">UPGRADING MILITARY VEHICLE</h2>
         <div className="flex w-full justify-center gap-x-5">
           <div className='w-[260px] h-[480px] relative object-cover' style={{background:`url('https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80')`}}>
             <div className="absolute text-white w-full p-4 bottom-0 text-left text-3xl">BEFORE</div>
@@ -100,8 +102,7 @@ const HomePage = () => {
       </section>
 
       <section className="text-center container mx-auto pt-20 pb-[50px]">
-        <h1 className="font-bold text-3xl mb-2 text-[#D73A32] pb-[50px]">SERVICE - RECONDITIONING</h1>
-
+        <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl text-[#D73A32] mb-[50px]">SERVICE - RECONDITIONING</h2>
         <div className="flex w-full justify-center gap-x-5">
           <div className='w-[260px] h-[480px] relative object-cover' style={{background:`url('https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80')`}}>
             <div className="absolute text-white w-full p-4 bottom-0 text-left text-3xl">BEFORE</div>
@@ -113,10 +114,12 @@ const HomePage = () => {
       </section>
 
       <section className="text-center container mx-auto pt-20 pb-[50px]">
-        <article className="max-w-[800px] mx-auto">
-          <h1 className="font-bold text-3xl mb-2 text-[#D73A32] mb-2">CHAISERI SUCCESS</h1>
-          <p>CHAISERI has successfully designed and developed products and service based on customer requirement since 1968. Our products have been in service in 6 continent, more than 40 countries.</p>
-        </article>
+        <div className="mx-auto max-w-[800px] sm:text-center mb-[50px]">
+          <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl text-[#D73A32]">CHAISERI SUCCESS</h2>
+          <p className="mt-6 text-lg leading-8 text-gray-600">
+          CHAISERI has successfully designed and developed products and service based on customer requirement since 1968. Our products have been in service in 6 continent, more than 40 countries.
+          </p>
+        </div>
 
         <div className="bg-white">
           <div className="mx-auto max-w-7xl divide-y divide-gray-200 lg:flex lg:justify-center lg:divide-y-0 lg:divide-x lg:py-8">
@@ -159,7 +162,7 @@ const HomePage = () => {
       </section>
 
       <section className="text-center pt-20 pb-[50px]">
-        <h1 className="font-bold text-3xl mb-2 text-[#D73A32] pb-[50px]">AWARDS</h1>
+        <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl text-[#D73A32] mb-[50px]">AWARDS</h2>
 
         <div className="flex w-full justify-center">
           <img src='https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80' alt="" className="w-1/2 object-cover"/>
