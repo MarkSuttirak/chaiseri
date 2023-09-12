@@ -16,10 +16,16 @@ import {
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { MagnifyingGlassIcon } from '@heroicons/react/20/solid'
+import LogoCHAISERI from "../img/Logo-CHAISERI-2.png";
+import M911 from "../img/M911-1.png";
+
+
+
 
 const menus = [
   {
     name: 'SYSTEM INTEGRATION',
+    col: 'col1',
     links: [
       {
         text: 'INTEGRATION WEAPON SYSTEM',
@@ -33,6 +39,7 @@ const menus = [
   },
   {
     name: 'RUNFLAT',
+    col: 'col2',
     links: [
       {
         text: 'RUNFLAT RANGE 50 KM',
@@ -42,6 +49,7 @@ const menus = [
   },
   { 
     name: 'ARMORED VEHICLE',
+    col: 'col3',
     links: [
       {
         text: 'FIRST WIN AFV',
@@ -63,6 +71,7 @@ const menus = [
   },
   {
     name: 'TRACK SYSTEM',
+    col: 'col4',
     links: [
       {
         text: 'TRACK SHOES',
@@ -72,6 +81,7 @@ const menus = [
   },
   {
     name: 'SERVICE',
+    col: 'col5',
     links: [
       {
         text: 'RECONDITION',
@@ -143,33 +153,33 @@ export default function Header() {
               <a href="#">
                 <span className="sr-only">Your Company</span>
                 <img
-                  className="h-8 w-auto sm:h-10"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                  className="h-8 w-auto sm:h-12"
+                  src={LogoCHAISERI}
                   alt=""
                 />
               </a>
             </div>
             <div className="-my-2 -mr-2 md:hidden">
-              <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+              <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-black focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                 <span className="sr-only">Open menu</span>
                 <Bars3Icon className="h-6 w-6" aria-hidden="true" />
               </Popover.Button>
             </div>
-            <Popover.Group as="nav" className="hidden space-x-10 md:flex">
+            <Popover.Group as="nav" className="hidden space-x-16 md:flex">
               <Popover className='relative'>
                 {({ open }) => (
                   <>
                     <Popover.Button
                       className={classNames(
-                        open ? 'text-gray-900' : 'text-gray-500',
-                        'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 outline-none'
+                        open ? 'text-black' : 'text-black',
+                        'group inline-flex items-center rounded-md bg-white text-xl font-semibold hover:text-black outline-none'
                       )}
                     >
-                      <span>Company</span>
+                      <span className='uppercase'>Company</span>
                       <ChevronDownIcon
                         className={classNames(
                           open ? 'text-gray-600' : 'text-gray-400',
-                          'ml-2 h-5 w-5 group-hover:text-gray-500'
+                          'ml-2 h-5 w-5 group-hover:text-black'
                         )}
                         aria-hidden="true"
                       />
@@ -191,10 +201,10 @@ export default function Header() {
                               <a
                                 key={item.name}
                                 href={item.href}
-                                className="-m-3 flex flex-col justify-between rounded-lg p-3 hover:bg-gray-50"
+                                className="-m-3 flex flex-col justify-between rounded-lg p-3"
                               >
                                 <div className="flex flex-col">
-                                  <p className="text-base font-medium text-gray-900">{item.name}</p>
+                                  <p className="text-base font-semibold text-black hover:text-[#D73A32]">{item.name}</p>
                                 </div>
                               </a>
                             ))}
@@ -211,15 +221,15 @@ export default function Header() {
                   <>
                     <Popover.Button
                       className={classNames(
-                        open ? 'text-gray-900' : 'text-gray-500',
-                        'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 outline-none'
+                        open ? 'text-black' : 'text-black',
+                        'group inline-flex items-center rounded-md bg-white text-xl font-semibold hover:text-black outline-none'
                       )}
                     >
-                      <span>Products</span>
+                      <span className='uppercase'>Products</span>
                       <ChevronDownIcon
                         className={classNames(
                           open ? 'text-gray-600' : 'text-gray-400',
-                          'ml-2 h-5 w-5 group-hover:text-gray-500'
+                          'ml-2 h-5 w-5 group-hover:text-black'
                         )}
                         aria-hidden="true"
                       />
@@ -236,16 +246,16 @@ export default function Header() {
                     >
                       <Popover.Panel className="absolute z-10 w-screen transform px-2 sm:px-0 left-0 w-[90%] m-auto flex justify-center">
                         <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 w-[90%]">
-                          <div className="relative grid grid-cols-5 bg-white px-5 py-6 sm:p-8">
-                            {menus.map((item) => (
+                          <div className="relative grid grid-cols-5 bg-white]">
+                            {menus.map((item,index) => (
                               <div
-                                className="-m-3 flex items-start rounded-lg p-3"
+                                className={`-m-3 flex items-start rounded-lg p-3 h-[600px]  pt-[50px] col ${item.col}`} style={{backgroundImage: item.bgImage}} key={index}
                               >
-                                <div className="ml-4">
-                                  <p className="text-lg font-medium text-gray-900">{item.name}</p>
-                                  <div className='flex flex-col gap-y-4 mt-4'>
+                                <div className="ml-4 relative">
+                                  <p className="text-xl font-semibold text-white">{item.name}</p>
+                                  <div className='flex flex-col gap-y-4 mt-4 '>
                                     {item.links.map((link) => 
-                                      <a href={link.href}>{link.text}</a>
+                                      <a href={link.href} className='text-base text-white font-semibold '>{link.text}</a>
                                     )}
                                   </div>
                                 </div>
@@ -259,16 +269,16 @@ export default function Header() {
                 )}
               </Popover>
 
-              <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+              <a href="#" className="text-xl font-semibold uppercase text-black hover:text-black">
                 Service
               </a>
-              <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+              <a href="#" className="text-xl font-semibold uppercase text-black hover:text-black">
                 News & Media
               </a>
-              <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+              <a href="#" className="text-xl font-semibold uppercase text-black hover:text-black">
                 Contact
               </a>
-              <button onClick={() => setOpen(true)} className="text-base font-medium text-gray-500 hover:text-gray-900">
+              <button onClick={() => setOpen(true)} className="text-xl font-semibold uppercase text-black hover:text-black">
                 <MagnifyingGlassIcon width='24'/>
               </button>
 
@@ -332,7 +342,7 @@ export default function Header() {
                   )}
 
                   {query !== '' && filteredSearch.length === 0 && (
-                    <p className="p-4 text-sm text-gray-500">Search not found.</p>
+                    <p className="p-4 text-sm text-black">Search not found.</p>
                   )}
                 </Combobox>
               </Dialog.Panel>

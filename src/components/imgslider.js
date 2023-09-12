@@ -1,10 +1,17 @@
 import SimpleImageSlider from "react-simple-image-slider";
+import home1 from "../img/home1.jpg";
+import home2 from "../img/home2.png";
+import home3 from "../img/home3.jpg";
+import home4 from "../img/home4.jpeg";
+import Home5 from "../img/Home5.png";
 
 const ImgSlider = () => {
   const images = [
-    "https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
-    "https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80",
-    "https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
+    home1,
+    home2,
+    home3,
+    home4,
+    Home5,
   ];
 
   return (
