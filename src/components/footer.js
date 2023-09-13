@@ -80,7 +80,7 @@ export default function Footer() {
       </h2>
       <div className="mainFooter bg-black ">
       <div className="mx-auto  max-w-[1280px] px-4 pb-8 pt-16">
-        <div className="flex justify-between items-center flex-wrap pb-12 lg:border-b lg:border-[#717171]">
+        <div className="flex justify-between items-center flex-wrap lg:flex-nowrap pb-12 lg:border-b lg:border-[#717171]">
           <div className="w-full lg:w-[33%]"> 
           <img src={LogoCHAISERI} alt="" />
           </div>
