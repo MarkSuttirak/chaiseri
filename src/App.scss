@@ -60,6 +60,29 @@ $main_color: #D73A32;
   background-position: center !important;
 }
 
+.contact-us-form-sec select{
+  background:#FAFBFC;
+  }
+
+  .contact-us-form-sec select option{
+    background:white;
+    }  
+
+  .contact-us-form-sec textarea{
+    background:#FAFBFC;
+    }
+
+.contact-us-form-sec input{
+background:#FAFBFC;
+}
+.contact-us-form-sec input:focus{
+  background:white;
+  }
+
+  .contact-us-form-sec textarea:focus{
+    background:white;
+    }
+
 
 
 
