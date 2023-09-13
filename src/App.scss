@@ -37,6 +37,9 @@ $main_color: #D73A32;
 
 .service-switch {
   padding:15px 30px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 600;
   border-bottom:2px solid #C4C4C4;
   color:#C4C4C4;
   z-index:3;
@@ -45,4 +48,32 @@ $main_color: #D73A32;
     color:#D73A32;
     border-color:#D73A32;
   }
+}
+
+.coverCenter {
+  background-size:cover !important;
+  background-position: center !important;
+}
+
+.topBanner {
+  background-size:cover !important;
+  background-position: center !important;
+}
+
+
+
+
+
+@media only screen and (max-width:600px){
+.serviceSlider  div{
+  width: 160px !important;
+    height: 100px !important;
+}
+
+.bg-black .container button[type="button"]:first-child {
+  left: 0px;
+}
+.serviceSlider div  button:last-child  {
+  right: 0px;
+}
 }
