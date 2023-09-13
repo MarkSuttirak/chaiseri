@@ -457,6 +457,33 @@ const ContactUs = () => {
             </div>
           </form>
         </section>
+
+        <section className="container mx-auto max-w-[1200px] px-6 mb-[50px]">
+          <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl text-[#D73A32] mb-[50px] text-center">
+            CHAISERI METAL AND RUBBER CO.,LTD
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div className="text-center">
+              {/* insert icon here */}
+              <h2 className="text-3xl font-semibold mb-2">ADDRESS</h2>
+              <p>59 moo 6, Pathum-Banglen road, Kubangluang, <br/>Lardlumkaew, Pathumthani, 12140, Thailand</p>
+            </div>
+            <div className="text-center">
+              {/* insert icon here */}
+              <h2 className="text-3xl font-semibold mb-2">EMAIL</h2>
+              <p>Info@chaiseri-defense.com</p>
+            </div>
+            <div className="text-center">
+              {/* insert icon here */}
+              <h2 className="text-3xl font-semibold mb-2">TEL</h2>
+              <p>Tel: +66(0)2 581-4981 <br/>Fax: +66(0)2 581-4981</p>
+            </div>
+          </div>
+        </section>
+
+        <section className='h-[520px] flex items-center' style={{background:`url('https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80')`,backgroundSize:'cover'}}>
+        </section>
       </main>
       <Footer />
     </>
