@@ -1,12 +1,17 @@
-import React from "react";
+import React from 'react';
 import Footer from "../components/footer";
 import Header from "../components/header";
 import firstwinafvbanner from "../img/first-win-afv-banner.jpg";
-import Download from "../img/download.svg";
+
 import firstAfvGroup from "../img/first-afv-group.png";
+import OurProductSlider from '../components/ourProductSlider';
 
 function FirstWinAfv() {
+
+
+
   return (
+    
     <>
       <Header />
 
@@ -28,7 +33,7 @@ function FirstWinAfv() {
           </div>
         </section>
 
-        <section className="container text-center mx-auto max-w-[1280px] px-6 mt-[80px] pb-[120px]">
+        <section className="container text-center mx-auto max-w-[1280px] px-6 mt-[80px] pb-[80px]">
           <p className="text-[#2d2a4a] font-semibold">ARMORED VEHICLE</p>
           <h2 className="text-5xl font-bold text-[#d73a32] mt-[8px]">
             FIRST WIN AFV
@@ -54,6 +59,12 @@ function FirstWinAfv() {
             className="mx-auto mt-[100px]"
             alt=""
           />
+        </section>
+
+
+        <section className='pb-28'>
+          <h2 className='text-[40px] text-[#d73a32] font-bold text-center mb-10'>OUR PRODUCTS</h2>
+          <OurProductSlider />
         </section>
       </main>
       <Footer />

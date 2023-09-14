@@ -7,6 +7,7 @@ import Service from './pages/service';
 import NewsMedia from './pages/news-media';
 import Runflat50km from './pages/Runflat50km';
 import FirstWinAfv from './pages/FirstWinAfv';
+import FirstWinAtv from './pages/FirstWinAtv';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/news-media" element={<NewsMedia />} />
         <Route path="/runflat-50-km" element={<Runflat50km />} />
         <Route path="/first-win-afv" element={<FirstWinAfv />} />
+        <Route path="/first-win-atv" element={<FirstWinAtv />} />
       </Routes>
     </BrowserRouter>
   )
