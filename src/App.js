@@ -5,6 +5,7 @@ import AboutUs from './pages/about-us';
 import ContactUs from './pages/contact-us';
 import Service from './pages/service';
 import NewsMedia from './pages/news-media';
+import Runflat50km from './pages/Runflat50km';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/service" element={<Service />} />
         <Route path="/news-media" element={<NewsMedia />} />
+        <Route path="/runflat-50-km" element={<Runflat50km />} />
       </Routes>
     </BrowserRouter>
   )
