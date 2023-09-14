@@ -11,6 +11,8 @@ import FirstWinAtv from './pages/FirstWinAtv';
 import FirstWin2 from './pages/FirstWin2';
 import FirstWin2Alv from './pages/FirstWinAlv';
 import TrackShoes from './pages/TrackShoes';
+import ComingSoon from './pages/comingsoon';
+
 
 function App() {
   return (
@@ -27,6 +29,9 @@ function App() {
         <Route path="/first-win-2" element={<FirstWin2 />} />
         <Route path="/first-win-alv" element={<FirstWin2Alv />} />
         <Route path="/track-system" element={<TrackShoes />} />
+        <Route path="/coming-soon" element={<ComingSoon />} />
+
+        
       </Routes>
     </BrowserRouter>
   )

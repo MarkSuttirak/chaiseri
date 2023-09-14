@@ -19,7 +19,9 @@ function TrackShoes() {
         >
           <div className="container mx-auto max-w-[1600px] px-6 flex sm:flex-row flex-col justify-between lg:items-end">
             <div>
-              <p className="text-[#f60606] text-3xl lg:text-5xl font-normal">01</p>
+              <p className="text-[#f60606] text-3xl lg:text-5xl font-normal">
+                01
+              </p>
               <h2 className="text-[#f60606] text-3xl lg:text-5xl font-bold mt-3">
                 TRACK SYSTEM
               </h2>
@@ -33,7 +35,7 @@ function TrackShoes() {
         <section className="container text-center mx-auto max-w-[1280px] px-6 mt-[80px] pb-[80px]">
           <p className="text-[#2d2a4a] font-semibold">other product</p>
           <h2 className="text-5xl font-bold text-[#d73a32] mt-[8px]">
-          TRACK SYSTEM
+            TRACK SYSTEM
           </h2>
           <p className="text-[#262626] font-medium mt-[20px]">
             First production of the track system has been produced in 1988. The
@@ -56,20 +58,22 @@ function TrackShoes() {
             to optimise the weight of the track, vehicle payload, vehicle
             mobility and fuel consumption.
           </p>
-          <img
-            src={C142}
-            className="mx-auto max-w-[749px] mt-[100px]"
-            alt=""
-          />
-
-<img
-            src={C154}
-            className="mx-auto max-w-[749px] mt-[100px]"
-            alt=""
-          />
         </section>
 
-        <section className="pb-28">
+        <section className="mx-auto max-w-[1280px] container px-4 sm:px-7 lg:px-0">
+          <h2 className="text-4xl font-bold text-[#2d2a4a] mt-[8px]">
+            TRACK SHOES C142-2 FOR M48/M60 SERIES
+          </h2>
+          <img src={C142} className="mt-[30px]" alt="" />
+
+          <h2 className="text-4xl font-bold text-[#2d2a4a] mt-[100px]">
+          TRACK SHOES T157 FOR M2 TANK
+          </h2>
+
+          <img src={C154} className=" mt-[30px]" alt="" />
+        </section>
+
+        <section className="pb-28 mt-20">
           <h2 className="text-[40px] text-[#d73a32] font-bold text-center mb-10">
             OUR PRODUCTS
           </h2>
