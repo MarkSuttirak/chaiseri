@@ -15,7 +15,7 @@ function Runflat50km() {
           className="h-[690px] flex items-end mb-[50px] pb-[40px] px-5 lg:px-[40px] coverCenter"
           style={{ background: `url('${RunflatBannerImg}')` }}
         >
-          <div className="container mx-auto max-w-[1600px] px-6 flex lg:flex-row flex-col justify-between lg:items-end">
+          <div className="container mx-auto max-w-[1600px] px-6 flex sm:flex-row flex-col justify-between lg:items-end">
             <div>
               <p className="text-white text-3xl lg:text-5xl font-normal">01</p>
               <h1 className="text-white text-3xl lg:text-5xl font-bold mt-3">
