@@ -1,14 +1,24 @@
+import React, { useState } from "react";
 import Footer from "../components/footer";
 import Header from "../components/header";
-import { useState } from "react";
+import NewsMediaExhibition from "../components/NewsMediaExhibition";
+import NewsMediaPhotos from "../components/NewsMediaPhotos";
+import NewsBannerImg from "../img/NewsBannerImg.png";
+import NewsMediaVideos from "../components/NewsMediaVideos";
 
 const NewsMedia = () => {
-  const [menu, setMenu] = useState(0)
+  const [activeTab, setActiveTab] = useState(0);
+
+  const handleTabClick = (tabIndex) => {
+    setActiveTab(tabIndex);
+  };
+
   return (
     <>
       <Header />
-      <main>
-        <section className='h-[520px] flex items-center mb-[50px]' style={{background:`url('https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80')`,backgroundSize:'cover'}}>
+
+      <main className="bg-[#FAFBFC]">
+        <section className="h-[520px] flex items-center mb-[50px] coverCenter" style={{ background: `url('${NewsBannerImg}')` }}>
           <div className="container mx-auto max-w-[1200px] px-6">
             <h1 className="text-white text-6xl font-bold">NEWS & MEDIA</h1>
           </div>
@@ -17,16 +27,45 @@ const NewsMedia = () => {
         <section className="container mx-auto max-w-[1400px] px-6 mb-[50px]">
           <div className="border-b border-b-[2px] border-b-[#C4C4C4]">
             <div className="flex justify-center">
-              <button className={`service-switch ${menu === 0 ? 'active' : ''}`} onClick={() => setMenu(0)}>EXHIBITION</button>
-              <button className={`service-switch ${menu === 1 ? 'active' : ''}`} onClick={() => setMenu(1)}>PHOTOS</button>
-              <button className={`service-switch ${menu === 2 ? 'active' : ''}`} onClick={() => setMenu(2)}>VIDEOS</button>
+              <button
+                className={`service-switch ${activeTab === 0 ? 'active' : ''}`}
+                onClick={() => handleTabClick(0)}
+              >
+                EXHIBITION
+              </button>
+              <button
+                className={`service-switch ${activeTab === 1 ? 'active' : ''}`}
+                onClick={() => handleTabClick(1)}
+              >
+                PHOTOS
+              </button>
+              <button
+                className={`service-switch ${activeTab === 2 ? 'active' : ''}`}
+                onClick={() => handleTabClick(2)}
+              >
+                VIDEOS
+              </button>
             </div>
           </div>
         </section>
+
+        {activeTab === 0 ? (
+          <section className="container mx-auto max-w-[1280px] px-6 mb-20">
+            <NewsMediaExhibition />
+          </section>
+        ) : activeTab === 1 ? (
+          <section className="container mx-auto max-w-[1280px] px-6 mb-20">
+           <NewsMediaPhotos />
+          </section>
+        ) : (
+          <section className="container mx-auto max-w-[1280px] px-6 mb-20">
+            <NewsMediaVideos />
+          </section>
+        )}
       </main>
       <Footer />
     </>
-  )
-}
+  );
+};
 
 export default NewsMedia;
