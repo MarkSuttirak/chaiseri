@@ -65,7 +65,7 @@ const HomePage = () => {
         <section className="text-center container mx-auto pt-20 pb-[35px]">
           <div className="mx-auto max-w-[800px] sm:text-center">
             <img className="mx-auto" src={LogoCHAISERI} />
-            <p className="mt-2 text-base font-medium leading-8 text-[#3a4f66]">
+            <p className="mt-2 text-base font-medium leading-8 text-[#3a4f66] px-4">
               Celebrating 50 years Reliable and Trusted partner in Defense Land
               system
             </p>
@@ -73,63 +73,61 @@ const HomePage = () => {
         </section>
 
         <section>
-          <div className="flex flex-wrap w-full">
-            <div className="h-[480px] lg:w-[18%]">
+          <div className="flex flex-wrap w-full flex-col lg:flex-row">
+            <div className="lg:h-[480px] lg:w-[16.67%]">
               <img
                 src={imagesBanner[0]}
                 alt=""
                 className="h-full object-cover w-full"
               />
+              <h1 className="py-4 text-center text-2xl leading-[24px] font-semibold uppercase bg-[#D73A32] text-white">
+              System Integration
+            </h1>
             </div>
-            <div className="h-[480px] lg:w-[18%]">
+            <div className="lg:h-[480px] lg:w-[16.67%]">
               <img
                 src={imagesBanner[1]}
                 alt=""
                 className="h-full object-cover w-full"
               />
+              <h1 className="p-4 text-center text-2xl leading-[24px] font-semibold uppercase bg-white text-black">
+              TRACK SYSTEM
+            </h1>
             </div>
-            <div className="h-[480px] lg:w-[28%]">
+            <div className="lg:h-[480px] lg:w-[32.33%]">
               <img
                 src={imagesBanner[2]}
                 alt=""
                 className="h-full object-cover w-full"
               />
+              <h1 className="p-4  text-center text-2xl leading-[24px] font-semibold uppercase bg-[#2D2A4A] text-white">
+              Armored Vehicle
+            </h1>
             </div>
-            <div className="h-[480px] lg:w-[18%]">
+            <div className="lg:h-[480px] lg:w-[16.67%]">
               <img
                 src={imagesBanner[3]}
                 alt=""
                 className="h-full object-cover w-full"
               />
+              <h1 className="p-4 text-center text-2xl leading-[24px] font-semibold uppercase bg-white text-black">
+              Runflat
+            </h1>
             </div>
-            <div className="h-[480px] lg:w-[18%]">
+            <div className="lg:h-[480px] lg:w-[16.67%]">
               <img
                 src={imagesBanner[4]}
                 alt=""
                 className="h-full object-cover w-full"
               />
-            </div>
-          </div>
-          <div className="flex w-full">
-            <h1 className="p-4 w-[18%] text-center text-2xl leading-[24px] font-semibold uppercase bg-[#D73A32] text-white">
-              System Integration
-            </h1>
-            <h1 className="p-4 w-[18%] text-center text-2xl leading-[24px] font-semibold uppercase bg-white text-black">
-              TRACK SYSTEM
-            </h1>
-            <h1 className="p-4 w-[28%] text-center text-2xl leading-[24px] font-semibold uppercase bg-[#2D2A4A] text-white">
-              Armored Vehicle
-            </h1>
-            <h1 className="p-4 w-[18%] text-center text-2xl leading-[24px] font-semibold uppercase bg-white text-black">
-              Runflat
-            </h1>
-            <h1 className="p-4 w-[18%] text-center text-2xl leading-[24px] font-semibold uppercase bg-[#D73A32] text-white">
+              <h1 className="py-4 text-center text-2xl leading-[24px] font-semibold uppercase bg-[#D73A32] text-white">
               Service
             </h1>
+            </div>
           </div>
         </section>
 
-        <section className="text-center container mx-auto pt-20 pb-[50px]">
+        <section className="text-center container mx-auto pt-8 pb-[50px]">
           <div className="mx-auto max-w-[800px] sm:text-center">
             <p className="text-[#3a4f66] text-base font-bold ">CHAISERI</p>
             <h2 className="mt-2 text-[38px] sm:text-[46px] leading-[38px] sm:leading-[46px] font-bold text-[#D73A32]">
