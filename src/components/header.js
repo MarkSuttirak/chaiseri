@@ -266,13 +266,13 @@ export default function Header() {
                 )}
               </Popover>
 
-              <a href="/service" className="text-base font-medium text-gray-500 hover:text-gray-900">
+              <a href="/service" className="text-2xl font-semibold text-black">
                 Service
               </a>
-              <a href="/news-media" className="text-base font-medium text-gray-500 hover:text-gray-900">
+              <a href="/news-media" className="text-2xl font-semibold text-black">
                 News & Media
               </a>
-              <a href="/contact-us" className="text-base font-medium text-gray-500 hover:text-gray-900">
+              <a href="/contact-us" className="text-2xl font-semibold text-black">
                 Contact
               </a>
               <button onClick={() => setOpen(true)} className="text-xl font-semibold uppercase text-black hover:text-black">

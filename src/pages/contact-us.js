@@ -1,18 +1,23 @@
 import Footer from "../components/footer";
 import Header from "../components/header";
+import ContactUsBannerImg from "../img/AboutUsBannerImg.png";
+import ContactUsLocation from "../img/ContactUsLocation.png";
+import Address from "../img/Address.png";
+import Email from "../img/Email.png";
+import Tel from "../img/Tel.png";
 
 const ContactUs = () => {
   return (
     <>
       <Header />
-      <main>
-        <section className='h-[520px] flex items-center mb-[50px]' style={{background:`url('https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80')`,backgroundSize:'cover'}}>
+      <main className="bg-[#FAFBFC]">
+      <section className='h-[520px] flex items-center mb-[50px] coverCenter' style={{background:`url('${ContactUsBannerImg}')`}}>
           <div className="container mx-auto max-w-[1200px] px-6">
             <h1 className="text-white text-6xl font-bold">CONTACT US</h1>
           </div>
         </section>
 
-        <section className="container mx-auto max-w-[1200px] px-6">
+        <section className="container mx-auto max-w-[1000px] px-6 contact-us-form-sec mt-[80px]">
           <form action='#' method="POST">
             <div className="flex flex-col gap-y-5">
               <div className="flex items-center w-full">
@@ -454,35 +459,57 @@ const ContactUs = () => {
                   />
                 </div>
               </div>
+              <div className="flex items-center">
+                <label htmlFor="enduser" className="block w-[200px] font-bold text-md">
+                  
+                </label>
+                <div className="mt-1 w-full">
+                <button type="submit" class=" bg-[#D73A32] py-3 px-16 text-[18px] leading-[27px] font-bold text-white">Send</button>
+                </div>
+              </div>
             </div>
           </form>
         </section>
 
-        <section className="container mx-auto max-w-[1200px] px-6 mb-[50px]">
-          <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl text-[#D73A32] mb-[50px] text-center">
+        <section className="container mx-auto max-w-[1280px] px-6 mb-[50px] mt-20">
+          <h2 className="mt-2 text-3xl font-bold sm:text-5xl text-[#D73A32] mb-[50px] text-center">
             CHAISERI METAL AND RUBBER CO.,LTD
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-[30px]">
             <div className="text-center">
-              {/* insert icon here */}
-              <h2 className="text-3xl font-semibold mb-2">ADDRESS</h2>
-              <p>59 moo 6, Pathum-Banglen road, Kubangluang, <br/>Lardlumkaew, Pathumthani, 12140, Thailand</p>
+              <div className="h-[100px]">
+              <img src={Address} alt=""  className="mx-auto mb-5"/>
+
+              </div>
+              <h2 className="text-3xl font-semibold mb-2 text-[#d73a32]">ADDRESS</h2>
+              <p className="text-[#262626]">59 moo 6, Pathum-Banglen road, Kubangluang, <br/>Lardlumkaew, Pathumthani, 12140, Thailand</p>
             </div>
             <div className="text-center">
-              {/* insert icon here */}
-              <h2 className="text-3xl font-semibold mb-2">EMAIL</h2>
-              <p>Info@chaiseri-defense.com</p>
+              
+              <div className="h-[100px]">
+              <img src={Email} alt=""  className="mx-auto mb-5"/>
+
+              </div>
+              <h2 className="text-3xl font-semibold mb-2 text-[#d73a32]">EMAIL</h2>
+              <p className="text-[#262626]">Info@chaiseri-defense.com</p>
             </div>
             <div className="text-center">
-              {/* insert icon here */}
-              <h2 className="text-3xl font-semibold mb-2">TEL</h2>
-              <p>Tel: +66(0)2 581-4981 <br/>Fax: +66(0)2 581-4981</p>
+              
+              <div className="h-[100px]">
+              <img src={Tel} alt=""  className="mx-auto mb-5"/>
+
+              </div>
+              <h2 className="text-3xl font-semibold mb-2 text-[#d73a32]">TEL</h2>
+              <p className="text-[#262626]">Tel: +66(0)2 581-4981 <br/>Fax: +66(0)2 581-4981</p>
             </div>
           </div>
         </section>
 
-        <section className='h-[520px] flex items-center' style={{background:`url('https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80')`,backgroundSize:'cover'}}>
+        <section className='bg-black w-full mt-[100px]'>
+          <a href="https://www.google.com/maps/place/Chaiseri+Metal+%26+Rubber+Co.,LTD./data=!4m7!3m6!1s0x30e28774cf00127f:0xa9d78fc5ed1d4d36!8m2!3d14.034584!4d100.488312!16s%2Fg%2F1hc8w2d1v!19sChIJfxIAz3SH4jARNk0d7cWP16k?authuser=0&hl=en&rclk=1">
+            <img src={ContactUsLocation} alt="" className="w-full"/>
+          </a>
         </section>
       </main>
       <Footer />

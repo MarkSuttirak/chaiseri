@@ -78,17 +78,17 @@ export default function Footer() {
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="mainFooter bg-black">
-      <div className="mx-auto  max-w-[1280px] pb-8 pt-16">
-        <div className="flex justify-between items-center pb-12 lg:border-b lg:border-[#717171]">
-          <div className="lg:w-[33%]"> 
+      <div className="mainFooter bg-black ">
+      <div className="mx-auto  max-w-[1280px] px-4 pb-8 pt-16">
+        <div className="flex justify-between items-center flex-wrap lg:flex-nowrap pb-12 lg:border-b lg:border-[#717171]">
+          <div className="w-full lg:w-[33%]"> 
           <img src={LogoCHAISERI} alt="" />
           </div>
             
-          <div className="lg:w-[48%]"> 
-              <p className="text-[22px] leading-[22px] text-right text-white">Ready to get started?</p>
+          <div className="w-full lg:w-[48%] mt-2 lg:mt-0"> 
+              <p className="text-[22px] leading-[22px] lg:text-right text-white">Ready to get started?</p>
             </div>
-            <div className="lg:w-[18%] text-right"> 
+            <div className="lg:w-[18%] w-full text-right mt-4 lg:mt-0"> 
                 <button className="text-white text-[15px]  leading-[15px] bg-[#D73A32] px-[44px] py-[15px] uppercase">Contact Us</button>
             </div>
         </div>
@@ -151,7 +151,7 @@ export default function Footer() {
         
       </div>
       <div className="footerLower bg-white">
-      <div className=" max-w-[1280px] mx-auto border-t border-gray-900/10 py-2 sm:mt-20 lg:mt-5">
+      <div className=" max-w-[1280px] mx-auto border-t px-4 text-center lg:text-left border-gray-900/10 py-2 sm:mt-20 lg:mt-5">
           <p className="text-sm leading-6 text-[#3a4f66]">
             &copy; 2022 chaiseri-defense.com | Chaiseri Metal & Rubber Co., Ltd.
           </p>
