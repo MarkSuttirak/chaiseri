@@ -113,7 +113,7 @@ const HomePage = () => {
           </div>
         </section>
 
-        <section className="max-w-[1200px] mx-auto pt-20 pb-[50px] text-center">
+        <section className="max-w-[1200px] mx-auto pt-20 pb-[50px] text-center homeSlider">
           <HomeSlider  />
         </section>
 

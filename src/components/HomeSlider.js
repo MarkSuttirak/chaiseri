@@ -57,7 +57,8 @@ const HomeSlider = () => {
         autoPlaySpeed = {4000}
         swipeable={true}
         draggable={true}
-        arrows={false}
+        arrows={true}
+        renderArrowsOutside={false} 
         showDots={false}
         infinite={true}
         partialVisible={false}

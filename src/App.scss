@@ -152,6 +152,20 @@ $main_color: #d73a32;
   right: 0;
 }
 
+.homeSlider .react-multiple-carousel__arrow{
+  background: transparent;
+}
+
+.homeSlider .react-multiple-carousel__arrow:hover{
+  background: transparent;
+}
+
+.homeSlider .react-multiple-carousel__arrow::before {
+  color: #D73A32 !important;
+  font-weight: 700;
+  font-size: 25px;
+}
+
 @media (min-width: 1200px) {
   .ourProductSlider .carousel-item {
     flex: 0 0 calc(33.333% - 1rem);
