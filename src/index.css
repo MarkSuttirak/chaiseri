@@ -63,6 +63,18 @@ body {
     opacity: inherit; /* Inherit the opacity from the parent */
   }
 
+  .ourProductSlider .carousel {
+  /* display: flex;
+  transition: transform 0.3s ease;  */
+  /* Add a transition for smoother animation */
+}
+
+.ourProductSlider .carousel-item {
+  /* flex: 0 0 33.333333%;  */
+  /* Adjust this to match your desired number of visible items */
+}
+
+
   @media only screen and (min-width:1200px){
     .awardsRightInnserSec {
         transform: translateX(-16%);

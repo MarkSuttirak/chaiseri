@@ -2,6 +2,7 @@ import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import ServiceMultiSlider from "../components/serviceMultipleSlider";
+import DesignExellenceAwards from "../img/Design-Exellence-Awards-2011.png";
 import AboutUsBannerImg from "../img/AboutUsBannerImg.png";
 import GreenIndustry from "../img/Green-industry.png";
 import LITTLEGOVERNORPROJECT from "../img/LITTLE-GOVERNOR-PROJECT.png";
@@ -23,7 +24,7 @@ import InternationalDefense from "../img/International-Defensebr-Exhibition.png"
 import ASEANBUSINESSAWARD2019 from "../img/ASEANBUSINESSAWARD2019.png";
 import IPCHAMPION2019 from "../img/IPCHAMPION2019.png";
 import IPCHAMPION2013 from "../img/IPCHAMPION2013.png";
-import DesignExellenceAwards from "../img/Design-Exellence-Awards-2011.png";
+import AboutSlider from "../components/AboutSlider";
 
 
 
@@ -244,9 +245,9 @@ const AboutUs = () => {
           </div>
         </section>
 
-        <section className="container mx-auto max-w-[1280px] px-6 lg:flex gap-x-2 lg:m-[120px] m-[70px] ">
+        <section className="container mx-auto max-w-[1280px] px-6 lg:flex gap-x-2 lg:m-[120px] ">
           <div className="lg:w-1/3 pb-[10px]">
-            <h2 className="font-bold tracking-tight text-center lg:text-left text-5xl text-[#2d2a4a]">MISSION</h2>
+            <h2 className="font-bold tracking-tight text-center lg:text-left text-[42px] lg:text-[46px] text-[#2d2a4a]">MISSION</h2>
           </div>
           <div className="flex lg:w-2/3 mt-[10px] lg:mt-0">
             <p className="text-[18px] leading-7 font-medium">To provide defense material that is good quality and fulfilling the requirement by combining in house capability and integrating of innovation</p>
@@ -255,7 +256,7 @@ const AboutUs = () => {
 
         <section className="container mx-auto max-w-[1280px] px-6 lg:flex gap-x-2 lg:m-[120px] m-[70px] ">
           <div className="lg:w-1/3 pb-[10px]">
-            <h2 className="font-bold tracking-tight text-center lg:text-left text-5xl text-[#2d2a4a]">QUALITY ASSURANCE</h2>
+            <h2 className="font-bold tracking-tight text-center lg:text-left text-[42px] lg:text-[46px] text-[#2d2a4a]">QUALITY ASSURANCE</h2>
           </div>
           <div className="flex flex-col lg:w-2/3 mt-[10px] lg:mt-0 gap-y-4">
             <p className="text-[18px] leading-7 font-medium">In our continuous quality control process, we have stringent batch laboratory test of raw materials and field testing under actual operating condition which are standard practice of Chaiseri in order to make the products’ quality according to Military specification and NATO standard.</p>
@@ -264,9 +265,9 @@ const AboutUs = () => {
           </div>
         </section>
 
-        <section className="container mx-auto max-w-[1280px] px-6 lg:flex lg:m-[120px] m-[70px] h-[600px]">
+        <section className="container mx-auto max-w-[1280px] px-6 lg:flex lg:m-[120px] m-[70px] lg:h-[600px]">
           <div className="lg:w-2/3">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15482.881382754513!2d100.48955700000002!3d14.034584!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e28774cf00127f%3A0xa9d78fc5ed1d4d36!2sChaiseri%20Metal%20%26%20Rubber%20Co.%2CLTD.!5e0!3m2!1sen!2sus!4v1694491001693!5m2!1sen!2sus" className="border-0 w-full h-full" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15482.881382754513!2d100.48955700000002!3d14.034584!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e28774cf00127f%3A0xa9d78fc5ed1d4d36!2sChaiseri%20Metal%20%26%20Rubber%20Co.%2CLTD.!5e0!3m2!1sen!2sus!4v1694491001693!5m2!1sen!2sus" className="border-0 w-full lg:h-full h-[300px]" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
           <div className="lg:w-1/3 bg-[#2D2A4A] flex flex-col justify-between p-[60px]">
             <h2 className="font-bold tracking-tight text-center lg:text-left text-5xl text-white">LOCATION</h2>
@@ -274,7 +275,7 @@ const AboutUs = () => {
           </div>
         </section>
 
-        <section className="container mx-auto max-w-[1600px] px-6 m-[120px]">
+        <section className="container mx-auto max-w-[1600px] px-6 lg:m-[120px]">
           <div className="flex flex-col text-center w-full">
             <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-[46px] text-[#2D2A4A]">CORPORATE SOCIAL RESPONSIBILITY</h2>
             <p className="text-[22px] leading- text-[#a51931]">
@@ -315,8 +316,12 @@ const AboutUs = () => {
           </div>
         </section>
 
-        <section className="px-6 bg-black">
+        {/* <section className="px-6 bg-black">
           <ServiceMultiSlider resources={items} withTitle={true} titleColor="#D73A32" descColor="white"/>
+        </section> */}
+
+<section className="px-6 bg-black py-[70px]">
+        <AboutSlider />  
         </section>
 
         

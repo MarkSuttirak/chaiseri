@@ -14,10 +14,8 @@ import Runflat from "../img/Runflat.png";
 import Services from "../img/Services.png";
 import UpgradingBefore from "../img/UpgradingBefore.jpg";
 import UpgradingAfter from "../img/UpgradingAfter.jpg";
-import FIRSTWINAFV from "../img/FIRSTWINAFV.png";
-import FirstWinAtv from "../img/FirstWinAtv.png";
-import FIRSTWIN2 from "../img/FIRSTWIN2.png";
-import FIRSTWINALV from "../img/FIRSTWINALV.png";
+
+import HomeSlider from "../components/HomeSlider";
 
 const HomePage = () => {
   const imagesBanner = [
@@ -28,29 +26,7 @@ const HomePage = () => {
     Services,
   ];
 
-  const items = [
-    {
-      imageUrl: FIRSTWINAFV,
-      title: "FIRST WIN AFV",
-    },
-    {
-      imageUrl: FirstWinAtv,
-      title: "First win atv",
-    },
-    {
-      imageUrl: FIRSTWIN2,
-      title: "FIRST WIN 2",
-    },
-    {
-      imageUrl: FIRSTWINALV,
-      title: "FIRST WIN ALV",
-    },
-    {
-      imageUrl: FIRSTWINAFV,
-      title: "FIRST WIN AFV",
-    },
-  ];
-
+ 
   return (
     <>
       <Header />
@@ -137,12 +113,14 @@ const HomePage = () => {
           </div>
         </section>
 
-        <section className="text-center container mx-auto pt-20 pb-[50px] ">
-          <MultiSlider resources={items} />
+        <section className="max-w-[1200px] mx-auto pt-20 pb-[50px] text-center">
+          <HomeSlider  />
         </section>
 
-        <section className="text-center container mx-auto pt-20 pb-[50px] px-[30px]">
-          <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl text-[#D73A32] mb-[50px]">
+        
+
+        <section className="text-center container mx-auto pt-10 pb-[50px] px-[30px]">
+          <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-[46px] text-[#D73A32] mb-[50px]">
             UPGRADING MILITARY VEHICLE
           </h2>
           <div className="flex flex-col lg:flex-row  w-full justify-center gap-x-5">
@@ -175,7 +153,7 @@ const HomePage = () => {
         </section>
 
         <section className="text-center container mx-auto pt-20 pb-[50px] px-[30px]">
-          <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl text-[#D73A32] mb-[50px]">
+          <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-[46px] text-[#D73A32] mb-[50px]">
             SERVICE – RECONDITIONING
           </h2>
           <div className="flex flex-col lg:flex-row  w-full justify-center gap-x-5">
@@ -286,19 +264,22 @@ const HomePage = () => {
           </h2>
 
           <div className="flex flex-col lg:flex-row w-full justify-center">
-            <img src={PMAward} alt="" className="w-full lg:w-[60%] object-cover" />
+            <img
+              src={PMAward}
+              alt=""
+              className="w-full lg:w-[60%] object-cover"
+            />
 
             <div className="w-full lg:w-[40%] flex flex-col gap-y-5 justify-center items-start">
               <div className="awardsRightInnserSec flex justify-center bg-[#D73A32] w-full">
                 <div className="w-full lg:w-[380px] flex flex-col justify-center items-center lg:items-start  h-[50vh]">
-                <h1 className="text-white text-[32px] lg:text-[60px] leading-[45px]  lg:leading-[84px] font-medium">
-                  News &Media
-                </h1>
-                <button className="py-4 px-7 mt-8 mb-2 bg-white text-[#D73A32] text-base leading-4 font-bold">
-                  View more
-                </button>
+                  <h1 className="text-white text-[32px] lg:text-[60px] leading-[45px]  lg:leading-[84px] font-medium">
+                    News &Media
+                  </h1>
+                  <button className="py-4 px-7 mt-8 mb-2 bg-white text-[#D73A32] text-base leading-4 font-bold">
+                    View more
+                  </button>
                 </div>
-                
               </div>
             </div>
           </div>

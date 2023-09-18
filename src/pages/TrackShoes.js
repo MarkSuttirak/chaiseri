@@ -32,9 +32,9 @@ function TrackShoes() {
           </div>
         </section>
 
-        <section className="container text-center mx-auto max-w-[1280px] px-6 mt-[80px] pb-[80px]">
-          <p className="text-[#2d2a4a] font-semibold">other product</p>
-          <h2 className="text-5xl font-bold text-[#d73a32] mt-[8px]">
+        <section className="container mx-auto max-w-[1280px] px-6 mt-[80px] pb-[80px]">
+          <p className="text-[#2d2a4a]  text-center font-semibold">other product</p>
+          <h2 className="text-5xl text-center  font-bold text-[#d73a32] mt-[8px]">
             TRACK SYSTEM
           </h2>
           <p className="text-[#262626] font-medium mt-[20px]">
@@ -60,7 +60,7 @@ function TrackShoes() {
           </p>
         </section>
 
-        <section className="mx-auto max-w-[1280px] container px-4 sm:px-7 lg:px-0">
+        <section className="mx-auto max-w-[1280px] container px-4  mb-3 sm:px-7 lg:px-0">
           <h2 className="text-4xl font-bold text-[#2d2a4a] mt-[8px]">
             TRACK SHOES C142-2 FOR M48/M60 SERIES
           </h2>
@@ -73,12 +73,7 @@ function TrackShoes() {
           <img src={C154} className=" mt-[30px]" alt="" />
         </section>
 
-        <section className="pb-28 mt-20">
-          <h2 className="text-[40px] text-[#d73a32] font-bold text-center mb-10">
-            OUR PRODUCTS
-          </h2>
-          <OurProductSlider />
-        </section>
+      
       </main>
       <Footer />
     </>

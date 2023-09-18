@@ -29,9 +29,9 @@ function FirstWin2() {
           </div>
         </section>
 
-        <section className="container text-center mx-auto max-w-[1280px] px-6 mt-[80px] pb-[80px]">
-          <p className="text-[#2d2a4a] font-semibold">ARMORED VEHICLE</p>
-          <h2 className="text-5xl font-bold text-[#d73a32] mt-[8px]">
+        <section className="container  mx-auto max-w-[1240px] px-6 mt-[80px] pb-[80px]">
+          <p className="text-[#2d2a4a] text-center font-semibold">ARMORED VEHICLE</p>
+          <h2 className="text-5xl font-bold text-center text-[#d73a32] mt-[8px]">
             FIRST WIN 2
           </h2>
           <p className="text-[#262626] font-medium mt-[20px]">
@@ -51,7 +51,7 @@ function FirstWin2() {
           />
         </section>
 
-        <section className="pb-28">
+        <section className='pb-28 max-w-[1280px] mx-auto'>
           <h2 className="text-[40px] text-[#d73a32] font-bold text-center mb-10">
             OUR PRODUCTS
           </h2>
