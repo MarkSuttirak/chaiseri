@@ -50,7 +50,7 @@ const items = [
   ];
 
 
-const ourProduct = () => {
+const ProductSlider = () => {
   return (
     <div className="parent align-middle">
       <Carousel
@@ -65,11 +65,11 @@ const ourProduct = () => {
         partialVisible={false}
         dotListClass="custom-dot-list-style"
       >
-        {items.map((resource, index) => {
+        {resourcesdd.map((resource, index) => {
           return (
             <div className="slider" key={index}>
-              <img src={resource.url}  draggable="false" className="w-[336px] h-[252px] object-cover mx-auto" />
-              <h3 className="py-6 px-3 mx-auto text-center text-[#2d2a4a] text-[32px] leading-[48px] font-bold">
+              <img src={resource.url}  draggable="false" className="w-[222px] h-[181px] object-cover mx-auto" />
+              <h3 className="py-6 px-3 mx-auto text-[#2d2a4a] text-[32px] leading-[48px] font-bold">
                 {resource.title}
               </h3>
             </div>
@@ -79,4 +79,4 @@ const ourProduct = () => {
     </div>
   );
 };
-export default ourProduct;
+export default ProductSlider;

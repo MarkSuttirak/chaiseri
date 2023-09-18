@@ -24,7 +24,7 @@ const NewsMedia = () => {
           </div>
         </section>
 
-        <section className="container mx-auto max-w-[1400px] px-6 mb-[50px]">
+        <section className="container mx-auto max-w-[1400px] px-6 mb-[70px]">
           <div className="border-b border-b-[2px] border-b-[#C4C4C4]">
             <div className="flex justify-center">
               <button

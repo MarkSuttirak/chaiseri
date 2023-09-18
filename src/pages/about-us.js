@@ -2,6 +2,7 @@ import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import ServiceMultiSlider from "../components/serviceMultipleSlider";
+import DesignExellenceAwards from "../img/Design-Exellence-Awards-2011.png";
 import AboutUsBannerImg from "../img/AboutUsBannerImg.png";
 import GreenIndustry from "../img/Green-industry.png";
 import LITTLEGOVERNORPROJECT from "../img/LITTLE-GOVERNOR-PROJECT.png";
@@ -23,7 +24,7 @@ import InternationalDefense from "../img/International-Defensebr-Exhibition.png"
 import ASEANBUSINESSAWARD2019 from "../img/ASEANBUSINESSAWARD2019.png";
 import IPCHAMPION2019 from "../img/IPCHAMPION2019.png";
 import IPCHAMPION2013 from "../img/IPCHAMPION2013.png";
-import DesignExellenceAwards from "../img/Design-Exellence-Awards-2011.png";
+import AboutSlider from "../components/AboutSlider";
 
 
 
@@ -190,12 +191,12 @@ const AboutUs = () => {
 
       <main className="bg-[#FAFBFC]">
         <section className='h-[520px] flex items-center mb-[50px] coverCenter' style={{background:`url('${AboutUsBannerImg}')`}}>
-          <div className="container mx-auto max-w-[1280px] px-6">
+          <div className="container mx-auto max-w-[1270px] lg:px-0 px-6">
             <h1 className="text-white text-6xl font-bold">ABOUT US</h1>
           </div>
         </section>
 
-        <section className="container mx-auto max-w-[1280px] px-6">
+        <section className="container mx-auto max-w-[1280px] mt-20 lg:px-0 px-6">
           <p className="font-medium text-black">Chaiseri is a Thai company specialize in Defense Land system for Armored vehicle, Tracks system, Runflat, and maintenance, upgrading service for military vehicle. We design, manufacture, recondition, upgrade military vehicle and its subsystem to meet satisfaction of the growing needs of armed forces and internal security organization. Our product and service under brand “Chaiseri” has been delivered to 6 continents, more than 40 countries. Helping to maintain the peace of nations and increasing land system readiness to the end user defense forces, we have experienced in the business since 1968 (B.E. 2511)</p>
           <p className="mt-4 font-medium text-black">CHAISERI production facility, area of 140,000 sqm, located in industrial district, Pathumthani, Thailand, 40 km North from Bangkok city center and 50 km to seaport. We have various type of machine from latest state of the art CNC machine, various type of cutting machine, pressing machine, dynamometer test, various type of test machine, sand blasting room, paint / coating room and oven, rubber forming and etc. We have system integration engineer and technician more than 30 peoples and various type of machine for service customer. Product and Service are categorized in to 5 segments.</p>
           <ol className="list-decimal ml-8 mt-4 space-y-1">
@@ -207,7 +208,7 @@ const AboutUs = () => {
           </ol>
         </section>
 
-        <section className="container mx-auto max-w-[1280px] px-6 lg:flex gap-x-2 m-[120px]">
+        <section className="container mx-auto max-w-[1280px] px-6 lg:flex gap-x-2 lg:m-[120px] m-[70px]">
           <div className="lg:w-1/3 pb-[10px]">
             <h2 className="font-bold tracking-tight text-center lg:text-left text-5xl text-[#2d2a4a]">VISION</h2>
           </div>
@@ -217,7 +218,7 @@ const AboutUs = () => {
           </div>
         </section>
 
-        <section className="container mx-auto max-w-[1280px] px-6 lg:flex gap-x-2 m-[120px]">
+        <section className="container mx-auto max-w-[1280px] px-6 lg:flex gap-x-2 lg:m-[120px] m-[70px]">
           <div className="lg:w-1/3 pb-[10px]">
             <h2 className="font-bold tracking-tight text-center lg:text-left text-5xl text-[#D73A32]">OUR VALUES</h2>
           </div>
@@ -244,18 +245,18 @@ const AboutUs = () => {
           </div>
         </section>
 
-        <section className="container mx-auto max-w-[1280px] px-6 lg:flex gap-x-2 m-[120px]">
+        <section className="container mx-auto max-w-[1280px] px-6 lg:flex gap-x-2 lg:m-[120px] ">
           <div className="lg:w-1/3 pb-[10px]">
-            <h2 className="font-bold tracking-tight text-center lg:text-left text-5xl text-[#2d2a4a]">MISSION</h2>
+            <h2 className="font-bold tracking-tight text-center lg:text-left text-[42px] lg:text-[46px] text-[#2d2a4a]">MISSION</h2>
           </div>
           <div className="flex lg:w-2/3 mt-[10px] lg:mt-0">
             <p className="text-[18px] leading-7 font-medium">To provide defense material that is good quality and fulfilling the requirement by combining in house capability and integrating of innovation</p>
           </div>
         </section>
 
-        <section className="container mx-auto max-w-[1280px] px-6 lg:flex gap-x-2 m-[120px]">
+        <section className="container mx-auto max-w-[1280px] px-6 lg:flex gap-x-2 lg:m-[120px] m-[70px] ">
           <div className="lg:w-1/3 pb-[10px]">
-            <h2 className="font-bold tracking-tight text-center lg:text-left text-5xl text-[#2d2a4a]">QUALITY ASSURANCE</h2>
+            <h2 className="font-bold tracking-tight text-center lg:text-left text-[42px] lg:text-[46px] text-[#2d2a4a]">QUALITY ASSURANCE</h2>
           </div>
           <div className="flex flex-col lg:w-2/3 mt-[10px] lg:mt-0 gap-y-4">
             <p className="text-[18px] leading-7 font-medium">In our continuous quality control process, we have stringent batch laboratory test of raw materials and field testing under actual operating condition which are standard practice of Chaiseri in order to make the products’ quality according to Military specification and NATO standard.</p>
@@ -264,9 +265,9 @@ const AboutUs = () => {
           </div>
         </section>
 
-        <section className="container mx-auto max-w-[1280px] px-6 lg:flex m-[120px] h-[600px]">
+        <section className="container mx-auto max-w-[1280px] px-6 lg:flex lg:m-[120px] m-[70px] lg:h-[600px]">
           <div className="lg:w-2/3">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15482.881382754513!2d100.48955700000002!3d14.034584!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e28774cf00127f%3A0xa9d78fc5ed1d4d36!2sChaiseri%20Metal%20%26%20Rubber%20Co.%2CLTD.!5e0!3m2!1sen!2sus!4v1694491001693!5m2!1sen!2sus" className="border-0 w-full h-full" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15482.881382754513!2d100.48955700000002!3d14.034584!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e28774cf00127f%3A0xa9d78fc5ed1d4d36!2sChaiseri%20Metal%20%26%20Rubber%20Co.%2CLTD.!5e0!3m2!1sen!2sus!4v1694491001693!5m2!1sen!2sus" className="border-0 w-full lg:h-full h-[300px]" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
           <div className="lg:w-1/3 bg-[#2D2A4A] flex flex-col justify-between p-[60px]">
             <h2 className="font-bold tracking-tight text-center lg:text-left text-5xl text-white">LOCATION</h2>
@@ -274,9 +275,9 @@ const AboutUs = () => {
           </div>
         </section>
 
-        <section className="container mx-auto max-w-[1600px] px-6 m-[120px]">
+        <section className="container mx-auto max-w-[1600px] px-6 lg:m-[120px]">
           <div className="flex flex-col text-center w-full">
-            <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-5xl text-[#2d2a4a]">CORPORATE SOCIAL RESPONSIBILITY</h2>
+            <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-[46px] text-[#2D2A4A]">CORPORATE SOCIAL RESPONSIBILITY</h2>
             <p className="text-[22px] leading- text-[#a51931]">
             Chaiseri serve local community
             </p>
@@ -298,7 +299,7 @@ const AboutUs = () => {
 
         <section className="container mx-auto max-w-[1600px] px-6 m-[120px]">
           <div className="text-center w-full">
-            <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl text-[#D73A32]">AWARDS</h2>
+            <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-[46px] text-[#2D2A4A]">AWARDS</h2>
           </div>
           <div className="my-[5%]">
             <ul role="list" className="grid grid-cols-1 lg:grid-cols-3 gap-x-5 gap-y-10">
@@ -315,8 +316,12 @@ const AboutUs = () => {
           </div>
         </section>
 
-        <section className="px-6 bg-black">
+        {/* <section className="px-6 bg-black">
           <ServiceMultiSlider resources={items} withTitle={true} titleColor="#D73A32" descColor="white"/>
+        </section> */}
+
+<section className="px-6 bg-black py-[70px]">
+        <AboutSlider />  
         </section>
 
         
@@ -330,7 +335,7 @@ const AboutUs = () => {
                   <img src={award.source} alt="" className="pointer-events-none mx-auto"/>
                 </div>
                 <h2 className="font-semibold tracking-tight text-center text-2xl">{award.year}</h2>
-                <p className="pointer-events-none block text-base text-center font-medium text-black">{award.desc}</p>
+                <p className="pointer-events-none block text-base text-center font-normal text-black lg:mx-24">{award.desc}</p>
               </li>
             ))}
           </ul>

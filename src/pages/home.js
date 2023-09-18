@@ -14,10 +14,8 @@ import Runflat from "../img/Runflat.png";
 import Services from "../img/Services.png";
 import UpgradingBefore from "../img/UpgradingBefore.jpg";
 import UpgradingAfter from "../img/UpgradingAfter.jpg";
-import FIRSTWINAFV from "../img/FIRSTWINAFV.png";
-import FirstWinAtv from "../img/FirstWinAtv.png";
-import FIRSTWIN2 from "../img/FIRSTWIN2.png";
-import FIRSTWINALV from "../img/FIRSTWINALV.png";
+
+import HomeSlider from "../components/HomeSlider";
 
 const HomePage = () => {
   const imagesBanner = [
@@ -28,34 +26,7 @@ const HomePage = () => {
     Services,
   ];
 
-  const items = [
-    {
-      imageUrl:
-      FIRSTWINAFV,
-      title: "FIRST WIN AFV",
-    },
-    {
-      imageUrl:
-      FirstWinAtv,
-      title: "First win atv",
-    },
-    {
-      imageUrl:
-      FIRSTWIN2,
-      title: "FIRST WIN 2",
-    },
-    {
-      imageUrl:
-      FIRSTWINALV,
-      title: "FIRST WIN ALV",
-    },
-    {
-      imageUrl:
-      FIRSTWINAFV,
-      title: "FIRST WIN AFV",
-    },
-  ];
-
+ 
   return (
     <>
       <Header />
@@ -81,8 +52,8 @@ const HomePage = () => {
                 className="h-full object-cover w-full"
               />
               <h1 className="py-4 text-center text-2xl leading-[24px] font-semibold uppercase bg-[#D73A32] text-white">
-              System Integration
-            </h1>
+                System Integration
+              </h1>
             </div>
             <div className="lg:h-[480px] lg:w-[16.67%]">
               <img
@@ -91,8 +62,8 @@ const HomePage = () => {
                 className="h-full object-cover w-full"
               />
               <h1 className="p-4 text-center text-2xl leading-[24px] font-semibold uppercase bg-white text-black">
-              TRACK SYSTEM
-            </h1>
+                TRACK SYSTEM
+              </h1>
             </div>
             <div className="lg:h-[480px] lg:w-[32.33%]">
               <img
@@ -101,8 +72,8 @@ const HomePage = () => {
                 className="h-full object-cover w-full"
               />
               <h1 className="p-4  text-center text-2xl leading-[24px] font-semibold uppercase bg-[#2D2A4A] text-white">
-              Armored Vehicle
-            </h1>
+                Armored Vehicle
+              </h1>
             </div>
             <div className="lg:h-[480px] lg:w-[16.67%]">
               <img
@@ -111,8 +82,8 @@ const HomePage = () => {
                 className="h-full object-cover w-full"
               />
               <h1 className="p-4 text-center text-2xl leading-[24px] font-semibold uppercase bg-white text-black">
-              Runflat
-            </h1>
+                Runflat
+              </h1>
             </div>
             <div className="lg:h-[480px] lg:w-[16.67%]">
               <img
@@ -121,13 +92,13 @@ const HomePage = () => {
                 className="h-full object-cover w-full"
               />
               <h1 className="py-4 text-center text-2xl leading-[24px] font-semibold uppercase bg-[#D73A32] text-white">
-              Service
-            </h1>
+                Service
+              </h1>
             </div>
           </div>
         </section>
 
-        <section className="text-center container mx-auto pt-8 pb-[50px]">
+        <section className="text-center  mx-auto mt-36 pb-[50px]">
           <div className="mx-auto max-w-[800px] sm:text-center">
             <p className="text-[#3a4f66] text-base font-bold ">CHAISERI</p>
             <h2 className="mt-2 text-[38px] sm:text-[46px] leading-[38px] sm:leading-[46px] font-bold text-[#D73A32]">
@@ -142,81 +113,87 @@ const HomePage = () => {
           </div>
         </section>
 
-        <section className="text-center container mx-auto pt-20 pb-[50px] ">
-          <MultiSlider resources={items} />
+        <section className="max-w-[1200px] mx-auto pt-20 pb-[50px] text-center homeSlider">
+          <HomeSlider  />
         </section>
 
-        <section className="text-center container mx-auto pt-20 pb-[50px]">
-          <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl text-[#D73A32] mb-[50px]">
+        
+
+        <section className="text-center container mx-auto pt-10 pb-[50px] px-[30px]">
+          <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-[46px] text-[#D73A32] mb-[50px]">
             UPGRADING MILITARY VEHICLE
           </h2>
-          <div className="flex w-full justify-center gap-x-5">
+          <div className="flex flex-col lg:flex-row  w-full justify-center gap-x-5">
             <div
-              className="w-[260px] h-[400px] relative beforeAfterImg"
+              className="w-full lg:w-[260px] h-[400px] relative beforeAfterImg"
               style={{
                 background: `url(${UpgradingBefore})`,
                 backgroundSize: "cover",
                 backgroundPosition: "50%",
               }}
             >
-              <div className="absolute text-white w-full p-4 bottom-0 text-left text-3xl">
+              <div className="absolute text-white w-full p-4 font-semibold bottom-0 text-left text-4xl">
                 BEFORE
               </div>
             </div>
 
             <div
-              className="w-[260px] h-[400px] relative beforeAfterImg"
+              className="w-full lg:w-[260px] h-[400px] mt-5 lg:mt-0 relative beforeAfterImg"
               style={{
                 background: `url(${UpgradingAfter})`,
                 backgroundSize: "cover",
                 backgroundPosition: "50%",
               }}
             >
-              <div className="absolute text-white w-full p-4 bottom-0 text-left text-3xl">
+              <div className="absolute text-white w-full p-4 font-semibold bottom-0 text-left text-4xl">
                 AFTER
               </div>
             </div>
           </div>
         </section>
 
-        <section className="text-center container mx-auto pt-20 pb-[50px]">
-          <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl text-[#D73A32] mb-[50px]">
+        <section className="text-center container mx-auto pt-20 pb-[50px] px-[30px]">
+          <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-[46px] text-[#D73A32] mb-[50px]">
             SERVICE – RECONDITIONING
           </h2>
-          <div className="flex w-full justify-center gap-x-5">
+          <div className="flex flex-col lg:flex-row  w-full justify-center gap-x-5">
             <div
-              className="w-[260px] h-[400px] relative beforeAfterImg"
+              className="w-full lg:w-[260px] h-[400px] relative beforeAfterImg"
               style={{
                 background: `url(${Recondition})`,
                 backgroundSize: "cover",
                 backgroundPosition: "50%",
               }}
             >
-              <div className="absolute text-white w-full p-4 bottom-0 text-left text-3xl">
+              <div className="absolute text-white w-full p-4 font-semibold bottom-0 text-left text-4xl">
                 BEFORE
               </div>
             </div>
 
             <div
-              className="w-[260px] h-[400px] relative beforeAfterImg"
+              className="w-full lg:w-[260px] h-[400px] mt-5 lg:mt-0 relative beforeAfterImg"
               style={{
                 background: `url(${UpgradeE})`,
                 backgroundSize: "cover",
                 backgroundPosition: "50%",
               }}
             >
-              <div className="absolute text-white w-full p-4 bottom-0 text-left text-3xl">
+              <div className="absolute text-white w-full p-4 font-semibold bottom-0 text-left text-4xl">
                 AFTER
               </div>
             </div>
           </div>
         </section>
 
-        <section className="text-center container mx-auto pt-20 mt-10 pb-[50px] chaiseriSuccessSec">
-          <div className="mx-auto max-w-[800px] sm:text-center mb-[50px]">
+        <section className="text-center container mx-auto pt-28 mt-10 pb-[50px] chaiseriSuccessSec">
+          <div className="flex flex-col lg:flex-row mx-auto justify-center items-center">
+            <img src={LogoCHAISERI} className="" alt="" />
+
             <h2 className="mt-2 text-[38px] sm:text-[46px] leading-[38px] sm:leading-[46px] font-bold text-[#D73A32]">
-              CHAISERI SUCCESS
+              <span>SUCCESS</span>
             </h2>
+          </div>
+          <div className="mx-auto max-w-[800px] sm:text-center mb-[50px] px-[30px]">
             <p className="mt-6 text-base font-medium leading-8 text-[#3a4f66]">
               CHAISERI has successfully designed and developed products and
               service based on customer requirement since 1968. Our products
@@ -225,8 +202,8 @@ const HomePage = () => {
           </div>
 
           <div className=" ">
-            <div className="mx-auto max-w-7xl divide-y divide-gray-200 lg:flex lg:justify-center lg:divide-y-0 lg:divide-x lg:py-8">
-              <div className="py-8 lg:w-1/3 lg:flex-none lg:py-0">
+            <div className="mx-auto max-w-7xl divide-y lg:divide-[#D73A32] lg:flex lg:justify-center lg:divide-y-0 lg:divide-x lg:py-8">
+              <div className="py-1 lg:w-1/3 lg:flex-none lg:py-0">
                 <div className="mx-auto flex max-w-xs items-center px-4 lg:max-w-none lg:px-8">
                   <div className="ml-4 flex flex-auto flex-col">
                     <h3 className="font-medium text-[44px] leading-[44px] text-black uppercase">
@@ -238,7 +215,7 @@ const HomePage = () => {
                   </div>
                 </div>
               </div>
-              <div className="py-8 lg:w-1/3 lg:flex-none lg:py-0">
+              <div className="py-1 lg:w-1/3 lg:flex-none lg:py-0">
                 <div className="mx-auto flex max-w-xs items-center px-4 lg:max-w-none lg:px-8">
                   <div className="ml-4 flex flex-auto flex-col">
                     <p className="text-[80px] sm-[120px] lg:text-[134px] leading-[120px] text-[#D73A32] font-medium">
@@ -250,7 +227,7 @@ const HomePage = () => {
                   </div>
                 </div>
               </div>
-              <div className="py-8 lg:w-1/3 lg:flex-none lg:py-0">
+              <div className="py-1 lg:w-1/3 lg:flex-none lg:py-0">
                 <div className="mx-auto flex max-w-xs items-center px-4 lg:max-w-none lg:px-8">
                   <div className="ml-4 flex flex-auto flex-col">
                     <p className="text-[80px] sm-[120px] lg:text-[134px] leading-[120px] text-[#D73A32] font-medium">
@@ -270,11 +247,9 @@ const HomePage = () => {
           <figure>
             <img src={ThaiFlag} alt="" className="w-full object-cover" />
             <figcaption className="bg-black py-[75px] text-center px-10">
-              <h2 className="mt-2 text-[38px] sm:text-[46px] leading-[38px] sm:leading-[46px] font-bold text-[#D73A32] mb-[48px]">
-                SERVICE - RECONDITIONING
-              </h2>
+              <img src={LogoCHAISERI} className="w-40 h-auto mx-auto" alt="" />
 
-              <p className="text-white text-[32px] leading-[48px] font-bold max-w-[1120px] mx-auto">
+              <p className="text-white text-[32px] leading-[48px] font-bold max-w-[1270px] mt-12 uppercase mx-auto">
                 is a Thai company specialize in Defense Land system for Armored
                 Vehicle, Tracks system, runflat. We are ready to design and
                 customize our product to meet with user requirement.
@@ -283,22 +258,28 @@ const HomePage = () => {
           </figure>
         </section>
 
-        <section className="text-center pt-20 pb-[50px]">
+        <section className="text-center pt-20 lg:pb-[50px]">
           <h2 className="mt-2 text-[38px] sm:text-[46px] leading-[38px] sm:leading-[46px] font-bold text-[#D73A32] mb-[48px]">
             AWARDS
           </h2>
 
-          <div className="flex w-full justify-center">
-            <img src={PMAward} alt="" className="w-[60%] object-cover" />
+          <div className="flex flex-col lg:flex-row w-full justify-center">
+            <img
+              src={PMAward}
+              alt=""
+              className="w-full lg:w-[60%] object-cover"
+            />
 
-            <div className="w-[40%] flex flex-col gap-y-5 justify-center items-start">
-              <div className="awardsRightInnserSec bg-[#D73A32] ">
-                <h1 className="text-white text-[60px] leading-[84px] font-medium">
-                  News &Media
-                </h1>
-                <button className="py-4 px-7 mt-8 mb-2 bg-white text-[#D73A32] text-base leading-4 font-bold">
-                  View more
-                </button>
+            <div className="w-full lg:w-[40%] flex flex-col gap-y-5 justify-center items-start">
+              <div className="awardsRightInnserSec flex justify-center bg-[#D73A32] w-full">
+                <div className="w-full lg:w-[380px] flex flex-col justify-center items-center lg:items-start  h-[50vh]">
+                  <h1 className="text-white text-[32px] lg:text-[60px] leading-[45px]  lg:leading-[84px] font-medium">
+                    News &Media
+                  </h1>
+                  <button className="py-4 px-7 mt-8 mb-2 bg-white text-[#D73A32] text-base leading-4 font-bold">
+                    View more
+                  </button>
+                </div>
               </div>
             </div>
           </div>

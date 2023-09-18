@@ -1,12 +1,10 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import OurProductFIRSTWIN2nload from "../img/OurProductFIRSTWIN2.png";
-import OurProductFW2Ambulance from "../img/OurProductFW2Ambulance.png";
-import OurProductFirstWinAFV from "../img/OurProductFirstWinAFV.png";
-import OurProductFirstWinALV from "../img/OurProductFirstWinALV.png";
-import OurProductFirstWinATV from "../img/OurProductFirstWinATV.png";
-
+import FIRSTWINAFV from "../img/FIRSTWINAFV.png";
+import FirstWinAtv from "../img/FirstWinAtv.png";
+import FIRSTWIN2 from "../img/FIRSTWIN2.png";
+import FIRSTWINALV from "../img/FIRSTWINALV.png";
 // import "./styles.css";
 const responsive = {
   desktop: {
@@ -26,31 +24,31 @@ const responsive = {
   },
 };
 
-const items = [
+const resourcesdd = [
     {
-      url: OurProductFIRSTWIN2nload,
-      title: 'FIRST WIN 2',
+      url: FIRSTWINAFV,
+      title: "FIRST WIN AFV",
     },
     {
-      url: OurProductFW2Ambulance,
-      title: 'First Win 2 Ambulance',
+      url: FirstWinAtv,
+      title: "First win atv",
     },
     {
-      url: OurProductFirstWinAFV,
-      title: 'First Win AFV',
+      url: FIRSTWIN2,
+      title: "FIRST WIN 2",
     },
     {
-      url: OurProductFirstWinALV,
-      title: 'First Win ALV',
+      url: FIRSTWINALV,
+      title: "FIRST WIN ALV",
     },
     {
-      url: OurProductFirstWinATV,
-      title: 'First Win ATV',
+      url: FIRSTWINAFV,
+      title: "FIRST WIN AFV",
     },
   ];
 
 
-const ourProduct = () => {
+const HomeSlider = () => {
   return (
     <div className="parent align-middle">
       <Carousel
@@ -59,17 +57,18 @@ const ourProduct = () => {
         autoPlaySpeed = {4000}
         swipeable={true}
         draggable={true}
-        arrows={false}
+        arrows={true}
+        renderArrowsOutside={false} 
         showDots={false}
         infinite={true}
         partialVisible={false}
         dotListClass="custom-dot-list-style"
       >
-        {items.map((resource, index) => {
+        {resourcesdd.map((resource, index) => {
           return (
             <div className="slider" key={index}>
-              <img src={resource.url}  draggable="false" className="w-[336px] h-[252px] object-cover mx-auto" />
-              <h3 className="py-6 px-3 mx-auto text-center text-[#2d2a4a] text-[32px] leading-[48px] font-bold">
+              <img src={resource.url}  draggable="false" className="w-[222px] h-[181px] object-cover mx-auto" />
+              <h3 className="py-6 px-3 mx-auto text-[#2d2a4a] text-[32px] leading-[48px] font-bold">
                 {resource.title}
               </h3>
             </div>
@@ -79,4 +78,4 @@ const ourProduct = () => {
     </div>
   );
 };
-export default ourProduct;
+export default HomeSlider;

@@ -31,10 +31,10 @@ function FirstWin2Alv() {
           </div>
         </section>
 
-        <section className="container text-center mx-auto max-w-[1280px] px-6 mt-[80px] pb-[80px]">
+        <section className="container  mx-auto max-w-[1280px] px-6 mt-[80px] pb-[80px]">
           <div>
-            <p className="text-[#2d2a4a] font-semibold">other product</p>
-            <h2 className="text-5xl font-bold text-[#d73a32] mt-[8px]">
+            <p className="text-[#2d2a4a] text-center font-semibold">other product</p>
+            <h2 className="text-5xl font-bold text-center text-[#d73a32] mt-[8px]">
               ARMORED VEHICLE
             </h2>
             <p className="text-[#262626] font-medium mt-[20px]">
@@ -65,13 +65,13 @@ function FirstWin2Alv() {
           </div>
 
           <div className="lg:mt-20">
-            <h2 className="text-[40px] font-bold text-[#2d2a4a] mt-[8px]">
+            <h2 className="text-[40px] font-bold text-center text-[#2d2a4a] mt-[8px]">
               FIRST WIN ALV
             </h2>
-            <h2 className="text-[40px] font-bold text-[#2d2a4a] ">
-              #(ARMORED LIGHT VEHICLE)
+            <h2 className="text-[40px] font-bold text-center text-[#2d2a4a] ">
+              (ARMORED LIGHT VEHICLE)
             </h2>
-            <p className="text-[#262626] font-medium mt-[20px]">
+            <p className="text-[#262626] font-medium mt-[10px]">
               The First Win ALV featuring mine- protected monocoque hull,
               mobility not less than 210 horse power engine and 6 speed
               automatic transmission, heavy duty independent suspension with
@@ -95,7 +95,7 @@ function FirstWin2Alv() {
           </div>
         </section>
 
-        <section className="pb-28">
+        <section className='pb-28 max-w-[1280px] mx-auto'>
           <h2 className="text-[40px] text-[#d73a32] font-bold text-center mb-10">
             OUR PRODUCTS
           </h2>

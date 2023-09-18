@@ -25,18 +25,18 @@ function Runflat50km() {
             
               <a
                 href=""
-                className="flex  bg-[#D73A32AB] text-[24px] font-medium text-white py-[18px] mt-3 lg:mt-0 px-[32px]"
+                className="flex  justify-center bg-[#D73A32AB] text-[16px] lg:text-[24px] font-medium text-white w-[165px] lg:w-[214px] py-[18px] mt-3 lg:mt-0 px-[5px] lg:px-[32px]"
               >
                 <button>DOCUMENT </button>
-                <img src={Download} alt="" />
+                <img src={Download} alt="" className="ml-[5px]"/>
               </a>
             
           </div>
         </section>
 
-        <section className="container text-center mx-auto max-w-[1280px] px-6 mt-[80px] pb-[120px]">
-          <p className="text-[#2d2a4a] font-semibold">other product</p>
-          <h2 className="text-5xl font-bold text-[#d73a32] mt-[8px]">RUNFLAT</h2>
+        <section className="container  mx-auto max-w-[1250px] px-10 mt-[80px] pb-[60px] lg:pb-[120px]">
+          <p className="text-[#2d2a4a] text-center font-semibold">other product</p>
+          <h2 className="text-5xl font-bold text-center text-[#d73a32] mt-[8px]">RUNFLAT</h2>
           <p className="text-[#262626] font-medium mt-[20px]">
             Chaiseri Runflat provide safety for operator to continue their
             mission or escape at high speed during flat tire. Our runflat is
@@ -44,7 +44,7 @@ function Runflat50km() {
             speed of 90 km/h at first 3 Km and reduce speed to 50 km/h for 22 km
             while maintaining vehicle maneuver.
           </p>
-          <img src={RunFlatOtherProduct} className="mx-auto mt-[100px]" alt="" />
+          <img src={RunFlatOtherProduct} className="mx-auto mt-[30px] lg:mt-[100px]" alt="" />
         </section>
       </main>
       <Footer />
