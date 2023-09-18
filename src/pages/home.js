@@ -122,7 +122,7 @@ const HomePage = () => {
           </div>
         </section>
 
-        <section className="text-center container mx-auto pt-8 pb-[50px]">
+        <section className="text-center  mx-auto mt-36 pb-[50px]">
           <div className="mx-auto max-w-[800px] sm:text-center">
             <p className="text-[#3a4f66] text-base font-bold ">CHAISERI</p>
             <h2 className="mt-2 text-[38px] sm:text-[46px] leading-[38px] sm:leading-[46px] font-bold text-[#D73A32]">
@@ -141,66 +141,66 @@ const HomePage = () => {
           <MultiSlider resources={items} />
         </section>
 
-        <section className="text-center container mx-auto pt-20 pb-[50px]">
+        <section className="text-center container mx-auto pt-20 pb-[50px] px-[30px]">
           <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl text-[#D73A32] mb-[50px]">
             UPGRADING MILITARY VEHICLE
           </h2>
-          <div className="flex w-full justify-center gap-x-5">
+          <div className="flex flex-col lg:flex-row  w-full justify-center gap-x-5">
             <div
-              className="w-[260px] h-[400px] relative beforeAfterImg"
+              className="w-full lg:w-[260px] h-[400px] relative beforeAfterImg"
               style={{
                 background: `url(${UpgradingBefore})`,
                 backgroundSize: "cover",
                 backgroundPosition: "50%",
               }}
             >
-              <div className="absolute text-white w-full p-4 bottom-0 text-left text-3xl">
+              <div className="absolute text-white w-full p-4 font-semibold bottom-0 text-left text-4xl">
                 BEFORE
               </div>
             </div>
 
             <div
-              className="w-[260px] h-[400px] relative beforeAfterImg"
+              className="w-full lg:w-[260px] h-[400px] mt-5 lg:mt-0 relative beforeAfterImg"
               style={{
                 background: `url(${UpgradingAfter})`,
                 backgroundSize: "cover",
                 backgroundPosition: "50%",
               }}
             >
-              <div className="absolute text-white w-full p-4 bottom-0 text-left text-3xl">
+              <div className="absolute text-white w-full p-4 font-semibold bottom-0 text-left text-4xl">
                 AFTER
               </div>
             </div>
           </div>
         </section>
 
-        <section className="text-center container mx-auto pt-20 pb-[50px]">
+        <section className="text-center container mx-auto pt-20 pb-[50px] px-[30px]">
           <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl text-[#D73A32] mb-[50px]">
             SERVICE – RECONDITIONING
           </h2>
-          <div className="flex w-full justify-center gap-x-5">
+          <div className="flex flex-col lg:flex-row  w-full justify-center gap-x-5">
             <div
-              className="w-[260px] h-[400px] relative beforeAfterImg"
+              className="w-full lg:w-[260px] h-[400px] relative beforeAfterImg"
               style={{
                 background: `url(${Recondition})`,
                 backgroundSize: "cover",
                 backgroundPosition: "50%",
               }}
             >
-              <div className="absolute text-white w-full p-4 bottom-0 text-left text-3xl">
+              <div className="absolute text-white w-full p-4 font-semibold bottom-0 text-left text-4xl">
                 BEFORE
               </div>
             </div>
 
             <div
-              className="w-[260px] h-[400px] relative beforeAfterImg"
+              className="w-full lg:w-[260px] h-[400px] mt-5 lg:mt-0 relative beforeAfterImg"
               style={{
                 background: `url(${UpgradeE})`,
                 backgroundSize: "cover",
                 backgroundPosition: "50%",
               }}
             >
-              <div className="absolute text-white w-full p-4 bottom-0 text-left text-3xl">
+              <div className="absolute text-white w-full p-4 font-semibold bottom-0 text-left text-4xl">
                 AFTER
               </div>
             </div>
