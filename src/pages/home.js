@@ -30,28 +30,23 @@ const HomePage = () => {
 
   const items = [
     {
-      imageUrl:
-      FIRSTWINAFV,
+      imageUrl: FIRSTWINAFV,
       title: "FIRST WIN AFV",
     },
     {
-      imageUrl:
-      FirstWinAtv,
+      imageUrl: FirstWinAtv,
       title: "First win atv",
     },
     {
-      imageUrl:
-      FIRSTWIN2,
+      imageUrl: FIRSTWIN2,
       title: "FIRST WIN 2",
     },
     {
-      imageUrl:
-      FIRSTWINALV,
+      imageUrl: FIRSTWINALV,
       title: "FIRST WIN ALV",
     },
     {
-      imageUrl:
-      FIRSTWINAFV,
+      imageUrl: FIRSTWINAFV,
       title: "FIRST WIN AFV",
     },
   ];
@@ -81,8 +76,8 @@ const HomePage = () => {
                 className="h-full object-cover w-full"
               />
               <h1 className="py-4 text-center text-2xl leading-[24px] font-semibold uppercase bg-[#D73A32] text-white">
-              System Integration
-            </h1>
+                System Integration
+              </h1>
             </div>
             <div className="lg:h-[480px] lg:w-[16.67%]">
               <img
@@ -91,8 +86,8 @@ const HomePage = () => {
                 className="h-full object-cover w-full"
               />
               <h1 className="p-4 text-center text-2xl leading-[24px] font-semibold uppercase bg-white text-black">
-              TRACK SYSTEM
-            </h1>
+                TRACK SYSTEM
+              </h1>
             </div>
             <div className="lg:h-[480px] lg:w-[32.33%]">
               <img
@@ -101,8 +96,8 @@ const HomePage = () => {
                 className="h-full object-cover w-full"
               />
               <h1 className="p-4  text-center text-2xl leading-[24px] font-semibold uppercase bg-[#2D2A4A] text-white">
-              Armored Vehicle
-            </h1>
+                Armored Vehicle
+              </h1>
             </div>
             <div className="lg:h-[480px] lg:w-[16.67%]">
               <img
@@ -111,8 +106,8 @@ const HomePage = () => {
                 className="h-full object-cover w-full"
               />
               <h1 className="p-4 text-center text-2xl leading-[24px] font-semibold uppercase bg-white text-black">
-              Runflat
-            </h1>
+                Runflat
+              </h1>
             </div>
             <div className="lg:h-[480px] lg:w-[16.67%]">
               <img
@@ -121,8 +116,8 @@ const HomePage = () => {
                 className="h-full object-cover w-full"
               />
               <h1 className="py-4 text-center text-2xl leading-[24px] font-semibold uppercase bg-[#D73A32] text-white">
-              Service
-            </h1>
+                Service
+              </h1>
             </div>
           </div>
         </section>
@@ -212,11 +207,15 @@ const HomePage = () => {
           </div>
         </section>
 
-        <section className="text-center container mx-auto pt-20 mt-10 pb-[50px] chaiseriSuccessSec">
-          <div className="mx-auto max-w-[800px] sm:text-center mb-[50px]">
+        <section className="text-center container mx-auto pt-28 mt-10 pb-[50px] chaiseriSuccessSec">
+          <div className="flex mx-auto justify-center items-center">
+            <img src={LogoCHAISERI} className="" alt="" />
+
             <h2 className="mt-2 text-[38px] sm:text-[46px] leading-[38px] sm:leading-[46px] font-bold text-[#D73A32]">
-              CHAISERI SUCCESS
+              <span>SUCCESS</span>
             </h2>
+          </div>
+          <div className="mx-auto max-w-[800px] sm:text-center mb-[50px]">
             <p className="mt-6 text-base font-medium leading-8 text-[#3a4f66]">
               CHAISERI has successfully designed and developed products and
               service based on customer requirement since 1968. Our products
@@ -225,7 +224,7 @@ const HomePage = () => {
           </div>
 
           <div className=" ">
-            <div className="mx-auto max-w-7xl divide-y divide-gray-200 lg:flex lg:justify-center lg:divide-y-0 lg:divide-x lg:py-8">
+            <div className="mx-auto max-w-7xl divide-y divide-[#D73A32] lg:flex lg:justify-center lg:divide-y-0 lg:divide-x lg:py-8">
               <div className="py-8 lg:w-1/3 lg:flex-none lg:py-0">
                 <div className="mx-auto flex max-w-xs items-center px-4 lg:max-w-none lg:px-8">
                   <div className="ml-4 flex flex-auto flex-col">
@@ -270,11 +269,9 @@ const HomePage = () => {
           <figure>
             <img src={ThaiFlag} alt="" className="w-full object-cover" />
             <figcaption className="bg-black py-[75px] text-center px-10">
-              <h2 className="mt-2 text-[38px] sm:text-[46px] leading-[38px] sm:leading-[46px] font-bold text-[#D73A32] mb-[48px]">
-                SERVICE - RECONDITIONING
-              </h2>
+              <img src={LogoCHAISERI} className="w-40 h-auto mx-auto" alt="" />
 
-              <p className="text-white text-[32px] leading-[48px] font-bold max-w-[1120px] mx-auto">
+              <p className="text-white text-[32px] leading-[48px] font-bold max-w-[1270px] mt-12 uppercase mx-auto">
                 is a Thai company specialize in Defense Land system for Armored
                 Vehicle, Tracks system, runflat. We are ready to design and
                 customize our product to meet with user requirement.
@@ -292,13 +289,16 @@ const HomePage = () => {
             <img src={PMAward} alt="" className="w-[60%] object-cover" />
 
             <div className="w-[40%] flex flex-col gap-y-5 justify-center items-start">
-              <div className="awardsRightInnserSec bg-[#D73A32] ">
+              <div className="awardsRightInnserSec flex justify-center bg-[#D73A32] ">
+                <div className="w-[380px] flex flex-col justify-center items-start  h-[50vh]">
                 <h1 className="text-white text-[60px] leading-[84px] font-medium">
                   News &Media
                 </h1>
                 <button className="py-4 px-7 mt-8 mb-2 bg-white text-[#D73A32] text-base leading-4 font-bold">
                   View more
                 </button>
+                </div>
+                
               </div>
             </div>
           </div>

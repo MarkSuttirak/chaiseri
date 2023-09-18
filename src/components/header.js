@@ -166,8 +166,8 @@ export default function Header() {
   return (
     <header>
       <Popover className="relative bg-white">
-        <div className="mx-auto">
-          <div className="flex items-center justify-between lg:h-[120px] py-6 lg:justify-start md:space-x-10 px-6">
+        <div className="mx-auto max-w-[1310px]">
+          <div className="flex items-center justify-between lg:h-[120px]  py-6 lg:justify-start md:space-x-10 px-6">
             <div className="flex justify-start lg:w-0 lg:flex-1">
               <a href="/">
                 <span className="sr-only">Your Company</span>
@@ -197,7 +197,7 @@ export default function Header() {
                       <span className='uppercase hover:text-[#D73A32]'>Company</span>
                       <ChevronDownIcon
                         className={classNames(
-                          open ? 'text-gray-600' : 'text-gray-400',
+                          open ? 'text-black' : 'text-black',
                           'ml-2 h-5 w-5  '
                         )}
                         aria-hidden="true"
@@ -248,7 +248,7 @@ export default function Header() {
                       <span className="uppercase">Products</span>
                       <ChevronDownIcon
                         className={classNames(
-                          open ? "text-gray-600" : "text-gray-400",
+                          open ? "text-black" : "text-black",
                           "ml-2 h-5 w-5 group-hover:text-black"
                         )}
                         aria-hidden="true"
@@ -324,7 +324,7 @@ export default function Header() {
         </div>
       </Popover>
       {menu && (
-        <div className="bg-[#171A1E] h-screen w-[90%] right-0 absolute px-5 py-10 text-white lg:hidden shadow-sm">
+        <div className="bg-[#171A1E] h-screen w-[90%] z-10 right-0 absolute px-5 py-10 text-white lg:hidden shadow-sm">
           <p onClick={()=> setComapnyMenu(!comapnyMenu)} className="text-white leading-[40px] uppercase font-semibold text-[20px]">
             Company
           </p>
