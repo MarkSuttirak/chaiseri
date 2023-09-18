@@ -101,7 +101,7 @@ const Service = () => {
                 <SimpleImageSlider 
                   width='516px'
                   height='360px'
-                  className='leftSlider'
+                  className=' leftSlider'
                   images={[
                     ServiceGallery1Img1,
                     ServiceGallery1Img2,

@@ -101,11 +101,27 @@ $main_color: #d73a32;
   right: 10px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .serviceSlider div {
+    width: 450px !important;
+    height: 250px !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .serviceSlider div {
+    width: 340px !important;
+    height: 250px !important;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .serviceSlider div {
     width: 160px !important;
     height: 100px !important;
   }
+
+
 
   .bg-black .container button[type="button"]:first-child {
     left: 0px;
@@ -164,6 +180,15 @@ $main_color: #d73a32;
   color: #D73A32 !important;
   font-weight: 700;
   font-size: 25px;
+}
+
+.homeSlider button.react-multiple-carousel__arrow.react-multiple-carousel__arrow--left {
+  left: 0;
+}
+
+
+.homeSlider  button.react-multiple-carousel__arrow.react-multiple-carousel__arrow--right {
+  right: 0;
 }
 
 @media (min-width: 1200px) {
