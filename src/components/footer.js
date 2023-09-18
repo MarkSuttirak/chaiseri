@@ -1,14 +1,16 @@
+
 import LogoCHAISERI from "../img/Logo-CHAISERI-2.png";
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 
 const navigation = {
   solutions: [
-    { name: "HOME", href: "#" },
-    { name: "COMPANY", href: "#" },
-    { name: "PRODUCT", href: "#" },
-    { name: "SERVICES", href: "#" },
-    { name: "NEWS & MEDIA", href: "#" },
-    { name: "CONTACT", href: "#" },
+    { name: "HOME", href: "/" },
+    { name: "COMPANY", href: "/about-us" },
+    { name: "PRODUCT", href: "/first-win-alv#" },
+    { name: "SERVICES", href: "/service#" },
+    { name: "NEWS & MEDIA", href: "/news-media" },
+    { name: "CONTACT", href: "/contact-us" },
   ],
   support: [
     { name: "Pricing", href: "#" },
@@ -134,12 +136,11 @@ export default function Footer() {
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.solutions.map((item) => (
                     <li key={item.name}>
-                      <a
-                        href={item.href}
+                      <Link to={item.href}
                         className="text-sm text-white uppercase"
                       >
                         {item.name}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
