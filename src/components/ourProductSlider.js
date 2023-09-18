@@ -55,7 +55,7 @@ function OurProductSlider() {
               <div className="carousel">
                 {visibleItems.map((item, index) => (
                   <div key={index} className="carousel-item">
-                    <img src={item.imageUrl} alt={item.title} className="h-[237px] object-cover" />
+                    <img src={item.imageUrl} alt={item.title} className="h-[237px] object-cover mx-auto" />
                     <p className="mt-2 text-[32px] text-[#2d2a4a] font-bold ">{item.title}</p>
                   </div>
                 ))}
