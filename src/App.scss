@@ -4,6 +4,13 @@ $main_color: #d73a32;
   font-family: Barlow;
 }
 
+.react-multi-carousel-list {
+  cursor:grab;
+  &:active {
+    cursor: grabbing;
+  }
+}
+
 .each-slide-effect > div {
   display: flex;
   align-items: center;
