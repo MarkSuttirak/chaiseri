@@ -208,14 +208,14 @@ const HomePage = () => {
         </section>
 
         <section className="text-center container mx-auto pt-28 mt-10 pb-[50px] chaiseriSuccessSec">
-          <div className="flex mx-auto justify-center items-center">
+          <div className="flex flex-col lg:flex-row mx-auto justify-center items-center">
             <img src={LogoCHAISERI} className="" alt="" />
 
             <h2 className="mt-2 text-[38px] sm:text-[46px] leading-[38px] sm:leading-[46px] font-bold text-[#D73A32]">
               <span>SUCCESS</span>
             </h2>
           </div>
-          <div className="mx-auto max-w-[800px] sm:text-center mb-[50px]">
+          <div className="mx-auto max-w-[800px] sm:text-center mb-[50px] px-[30px]">
             <p className="mt-6 text-base font-medium leading-8 text-[#3a4f66]">
               CHAISERI has successfully designed and developed products and
               service based on customer requirement since 1968. Our products
@@ -224,7 +224,7 @@ const HomePage = () => {
           </div>
 
           <div className=" ">
-            <div className="mx-auto max-w-7xl divide-y divide-[#D73A32] lg:flex lg:justify-center lg:divide-y-0 lg:divide-x lg:py-8">
+            <div className="mx-auto max-w-7xl divide-y lg:divide-[#D73A32] lg:flex lg:justify-center lg:divide-y-0 lg:divide-x lg:py-8">
               <div className="py-8 lg:w-1/3 lg:flex-none lg:py-0">
                 <div className="mx-auto flex max-w-xs items-center px-4 lg:max-w-none lg:px-8">
                   <div className="ml-4 flex flex-auto flex-col">
