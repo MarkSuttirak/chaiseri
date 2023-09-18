@@ -190,12 +190,12 @@ const AboutUs = () => {
 
       <main className="bg-[#FAFBFC]">
         <section className='h-[520px] flex items-center mb-[50px] coverCenter' style={{background:`url('${AboutUsBannerImg}')`}}>
-          <div className="container mx-auto max-w-[1280px] px-6">
+          <div className="container mx-auto max-w-[1280px] lg:px-0 px-6">
             <h1 className="text-white text-6xl font-bold">ABOUT US</h1>
           </div>
         </section>
 
-        <section className="container mx-auto max-w-[1280px] px-6">
+        <section className="container mx-auto max-w-[1280px] lg:mt-20 lg:px-0 px-6">
           <p className="font-medium text-black">Chaiseri is a Thai company specialize in Defense Land system for Armored vehicle, Tracks system, Runflat, and maintenance, upgrading service for military vehicle. We design, manufacture, recondition, upgrade military vehicle and its subsystem to meet satisfaction of the growing needs of armed forces and internal security organization. Our product and service under brand “Chaiseri” has been delivered to 6 continents, more than 40 countries. Helping to maintain the peace of nations and increasing land system readiness to the end user defense forces, we have experienced in the business since 1968 (B.E. 2511)</p>
           <p className="mt-4 font-medium text-black">CHAISERI production facility, area of 140,000 sqm, located in industrial district, Pathumthani, Thailand, 40 km North from Bangkok city center and 50 km to seaport. We have various type of machine from latest state of the art CNC machine, various type of cutting machine, pressing machine, dynamometer test, various type of test machine, sand blasting room, paint / coating room and oven, rubber forming and etc. We have system integration engineer and technician more than 30 peoples and various type of machine for service customer. Product and Service are categorized in to 5 segments.</p>
           <ol className="list-decimal ml-8 mt-4 space-y-1">
@@ -276,7 +276,7 @@ const AboutUs = () => {
 
         <section className="container mx-auto max-w-[1600px] px-6 m-[120px]">
           <div className="flex flex-col text-center w-full">
-            <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-5xl text-[#2d2a4a]">CORPORATE SOCIAL RESPONSIBILITY</h2>
+            <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-[46px] text-[#2D2A4A]">CORPORATE SOCIAL RESPONSIBILITY</h2>
             <p className="text-[22px] leading- text-[#a51931]">
             Chaiseri serve local community
             </p>
@@ -298,7 +298,7 @@ const AboutUs = () => {
 
         <section className="container mx-auto max-w-[1600px] px-6 m-[120px]">
           <div className="text-center w-full">
-            <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl text-[#D73A32]">AWARDS</h2>
+            <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-[46px] text-[#2D2A4A]">AWARDS</h2>
           </div>
           <div className="my-[5%]">
             <ul role="list" className="grid grid-cols-1 lg:grid-cols-3 gap-x-5 gap-y-10">
@@ -330,7 +330,7 @@ const AboutUs = () => {
                   <img src={award.source} alt="" className="pointer-events-none mx-auto"/>
                 </div>
                 <h2 className="font-semibold tracking-tight text-center text-2xl">{award.year}</h2>
-                <p className="pointer-events-none block text-base text-center font-medium text-black">{award.desc}</p>
+                <p className="pointer-events-none block text-base text-center font-normal text-black lg:mx-24">{award.desc}</p>
               </li>
             ))}
           </ul>
