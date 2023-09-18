@@ -285,10 +285,10 @@ const HomePage = () => {
             AWARDS
           </h2>
 
-          <div className="flex w-full justify-center">
-            <img src={PMAward} alt="" className="w-[60%] object-cover" />
+          <div className="flex flex-col lg:flex-row w-full justify-center">
+            <img src={PMAward} alt="" className="w-full lg:w-[60%] object-cover" />
 
-            <div className="w-[40%] flex flex-col gap-y-5 justify-center items-start">
+            <div className="w-full lg:w-[40%] flex flex-col gap-y-5 justify-center items-start">
               <div className="awardsRightInnserSec flex justify-center bg-[#D73A32] ">
                 <div className="w-[380px] flex flex-col justify-center items-start  h-[50vh]">
                 <h1 className="text-white text-[60px] leading-[84px] font-medium">
