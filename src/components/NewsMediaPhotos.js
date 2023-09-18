@@ -137,7 +137,7 @@ const NewsMediaPhotos = () => {
               alt={`Image ${index}`}
               className="w-full h-[260px] md:h-[220px] xl:h-[305px] object-cover"
             />
-            <p className=" text-[#2d2a4a] text-[20px] leading-[33px] font-medium mt-2">{image.caption}</p>
+            <p className=" text-[#2d2a4a] text-[20px] leading-[33px] font-medium mt-2 text-center xl:text-left">{image.caption}</p>
           </div>
         ))}
       </div>

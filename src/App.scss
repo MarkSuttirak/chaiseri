@@ -129,6 +129,27 @@ $main_color: #d73a32;
   .serviceSlider div button:last-child {
     right: 0px;
   }
+
+  .service-switch {
+    padding: 15px 15px;
+}
+
+.serviceSlider button img[alt="slide to left"] {
+  height: 26px !important;
+  width: 100%;
+  left: -43px;
+  position: absolute;
+  top: 15px !important;
+}
+
+.serviceSlider button img[alt="slide to right"] {
+  height: 26px !important;
+  width: 100%;
+  right: -43px;
+  position: absolute;
+  top: 15px !important;
+}
+
 }
 
 
