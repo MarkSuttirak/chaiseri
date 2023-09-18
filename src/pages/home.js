@@ -225,7 +225,7 @@ const HomePage = () => {
 
           <div className=" ">
             <div className="mx-auto max-w-7xl divide-y lg:divide-[#D73A32] lg:flex lg:justify-center lg:divide-y-0 lg:divide-x lg:py-8">
-              <div className="py-8 lg:w-1/3 lg:flex-none lg:py-0">
+              <div className="py-1 lg:w-1/3 lg:flex-none lg:py-0">
                 <div className="mx-auto flex max-w-xs items-center px-4 lg:max-w-none lg:px-8">
                   <div className="ml-4 flex flex-auto flex-col">
                     <h3 className="font-medium text-[44px] leading-[44px] text-black uppercase">
@@ -237,7 +237,7 @@ const HomePage = () => {
                   </div>
                 </div>
               </div>
-              <div className="py-8 lg:w-1/3 lg:flex-none lg:py-0">
+              <div className="py-1 lg:w-1/3 lg:flex-none lg:py-0">
                 <div className="mx-auto flex max-w-xs items-center px-4 lg:max-w-none lg:px-8">
                   <div className="ml-4 flex flex-auto flex-col">
                     <p className="text-[80px] sm-[120px] lg:text-[134px] leading-[120px] text-[#D73A32] font-medium">
@@ -249,7 +249,7 @@ const HomePage = () => {
                   </div>
                 </div>
               </div>
-              <div className="py-8 lg:w-1/3 lg:flex-none lg:py-0">
+              <div className="py-1 lg:w-1/3 lg:flex-none lg:py-0">
                 <div className="mx-auto flex max-w-xs items-center px-4 lg:max-w-none lg:px-8">
                   <div className="ml-4 flex flex-auto flex-col">
                     <p className="text-[80px] sm-[120px] lg:text-[134px] leading-[120px] text-[#D73A32] font-medium">
