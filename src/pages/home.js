@@ -280,7 +280,7 @@ const HomePage = () => {
           </figure>
         </section>
 
-        <section className="text-center pt-20 pb-[50px]">
+        <section className="text-center pt-20 lg:pb-[50px]">
           <h2 className="mt-2 text-[38px] sm:text-[46px] leading-[38px] sm:leading-[46px] font-bold text-[#D73A32] mb-[48px]">
             AWARDS
           </h2>
@@ -289,9 +289,9 @@ const HomePage = () => {
             <img src={PMAward} alt="" className="w-full lg:w-[60%] object-cover" />
 
             <div className="w-full lg:w-[40%] flex flex-col gap-y-5 justify-center items-start">
-              <div className="awardsRightInnserSec flex justify-center bg-[#D73A32] ">
-                <div className="w-[380px] flex flex-col justify-center items-start  h-[50vh]">
-                <h1 className="text-white text-[60px] leading-[84px] font-medium">
+              <div className="awardsRightInnserSec flex justify-center bg-[#D73A32] w-full">
+                <div className="w-full lg:w-[380px] flex flex-col justify-center items-center lg:items-start  h-[50vh]">
+                <h1 className="text-white text-[32px] lg:text-[60px] leading-[45px]  lg:leading-[84px] font-medium">
                   News &Media
                 </h1>
                 <button className="py-4 px-7 mt-8 mb-2 bg-white text-[#D73A32] text-base leading-4 font-bold">
