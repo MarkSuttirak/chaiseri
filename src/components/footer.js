@@ -7,8 +7,8 @@ const navigation = {
   solutions: [
     { name: "HOME", href: "/" },
     { name: "COMPANY", href: "/about-us" },
-    { name: "PRODUCT", href: "/first-win-alv#" },
-    { name: "SERVICES", href: "/service#" },
+    { name: "PRODUCT", href: "/first-win-alv" },
+    { name: "SERVICES", href: "/service" },
     { name: "NEWS & MEDIA", href: "/news-media" },
     { name: "CONTACT", href: "/contact-us" },
   ],
