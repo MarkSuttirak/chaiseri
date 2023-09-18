@@ -41,7 +41,7 @@ const Service = () => {
 
         
 
-        <section className="container mx-auto max-w-[1400px] px-6 mb-[50px]">
+        <section className="container mx-auto max-w-[1400px] px-6 mb-[70px]">
           <div className="border-b border-b-[2px] border-b-[#C4C4C4]">
             <div className="flex justify-center">
               <button className={`service-switch ${swapSwitch ? 'active' : ''}`} onClick={() => setSwapSwitch(true)}>RECONDITION</button>
@@ -52,7 +52,7 @@ const Service = () => {
 
         {swapSwitch ? (
           <>
-            <section className="container mx-auto max-w-[1200px] px-6 mb-[50px]">
+            <section className="container mx-auto max-w-[1200px] px-6 mb-[70px]">
               <p className="text-center">With over 40 years of refurbishment and upgrading of military vehicle, we experience in extending the service life of armored track vehicle, armored wheel vehicle and logistic military vehicle for a total of more than 2,000 vehicle. The various type of vehicles include APC M113, APC T-85, AAVP7A1, HMMWV, V150, M816, M543, M35, M602, M151 and etc. Not only MRO on the complete vehicle, we also experience in upgrading subsystem eg M60 engine, M109 Howitzer engine, M113 power-pack and etc.</p>
             </section>
 

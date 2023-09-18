@@ -190,7 +190,7 @@ const AboutUs = () => {
 
       <main className="bg-[#FAFBFC]">
         <section className='h-[520px] flex items-center mb-[50px] coverCenter' style={{background:`url('${AboutUsBannerImg}')`}}>
-          <div className="container mx-auto max-w-[1280px] lg:px-0 px-6">
+          <div className="container mx-auto max-w-[1270px] lg:px-0 px-6">
             <h1 className="text-white text-6xl font-bold">ABOUT US</h1>
           </div>
         </section>
