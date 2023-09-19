@@ -32,7 +32,7 @@ function TrackShoes() {
           </div>
         </section>
 
-        <section className="container mx-auto max-w-[1280px] px-6 mt-[80px] pb-[80px]">
+        <section className="container  mx-auto max-w-[1200px] px-6 sm:px-8 xl:px-0 mt-[80px] pb-[80px]">
           <p className="text-[#2d2a4a]  text-center font-semibold">other product</p>
           <h2 className="text-5xl text-center  font-bold text-[#d73a32] mt-[8px]">
             TRACK SYSTEM
@@ -60,17 +60,17 @@ function TrackShoes() {
           </p>
         </section>
 
-        <section className="mx-auto max-w-[1280px] container px-4  mb-3 sm:px-7 lg:px-0">
+        <section className="mx-auto max-w-[1200px] text-center container px-4  mb-3 sm:px-7 xl:px-0">
           <h2 className="text-4xl font-bold text-[#2d2a4a] mt-[8px]">
             TRACK SHOES C142-2 FOR M48/M60 SERIES
           </h2>
-          <img src={C142} className="mt-[30px]" alt="" />
+          <img src={C142} className="mt-[30px] w-full" alt="" />
 
           <h2 className="text-4xl font-bold text-[#2d2a4a] mt-[100px]">
           TRACK SHOES T157 FOR M2 TANK
           </h2>
 
-          <img src={C154} className=" mt-[30px]" alt="" />
+          <img src={C154} className=" mt-[30px] w-full" alt="" />
         </section>
 
       

@@ -31,7 +31,7 @@ function FirstWin2Alv() {
           </div>
         </section>
 
-        <section className="container  mx-auto max-w-[1280px] px-6 mt-[80px] pb-[80px]">
+        <section className="container  mx-auto max-w-[1200px] px-6 sm:px-8 xl:px-0 mt-[80px] pb-[80px]">
           <div>
             <p className="text-[#2d2a4a] text-center font-semibold">other product</p>
             <h2 className="text-5xl font-bold text-center text-[#d73a32] mt-[8px]">

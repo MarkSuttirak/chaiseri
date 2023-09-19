@@ -49,7 +49,7 @@ const HomePage = () => {
               <img
                 src={imagesBanner[0]}
                 alt=""
-                className="h-full sm:h-[480px] object-cover w-full"
+                className="h-[406px] sm:h-[480px] object-cover w-full"
               />
               <h1 className="py-4 text-center text-2xl leading-[24px] font-semibold uppercase bg-[#D73A32] text-white">
                 System Integration
@@ -59,7 +59,7 @@ const HomePage = () => {
               <img
                 src={imagesBanner[1]}
                 alt=""
-                className="h-full sm:h-[480px] object-cover w-full"
+                className="h-[406px] sm:h-[480px] object-cover w-full"
               />
               <h1 className="p-4 text-center text-2xl leading-[24px] font-semibold uppercase bg-white text-black">
                 TRACK SYSTEM
@@ -69,7 +69,7 @@ const HomePage = () => {
               <img
                 src={imagesBanner[2]}
                 alt=""
-                className="h-full sm:h-[480px] object-cover w-full"
+                className="h-[406px] sm:h-[480px] object-cover w-full"
               />
               <h1 className="p-4  text-center text-2xl leading-[24px] font-semibold uppercase bg-[#2D2A4A] text-white">
                 Armored Vehicle
@@ -79,7 +79,7 @@ const HomePage = () => {
               <img
                 src={imagesBanner[3]}
                 alt=""
-                className="h-full sm:h-[480px] object-cover w-full"
+                className="h-[406px] sm:h-[480px] object-cover w-full"
               />
               <h1 className="p-4 text-center text-2xl leading-[24px] font-semibold uppercase bg-white text-black">
                 Runflat
@@ -89,7 +89,7 @@ const HomePage = () => {
               <img
                 src={imagesBanner[4]}
                 alt=""
-                className="h-full sm:h-[480px] object-cover w-full"
+                className="h-[406px] sm:h-[480px] object-cover w-full"
               />
               <h1 className="py-4 text-center text-2xl leading-[24px] font-semibold uppercase bg-[#D73A32] text-white">
                 Service
@@ -263,7 +263,7 @@ const HomePage = () => {
             AWARDS
           </h2>
 
-          <div className="flex flex-col lg:flex-row w-full justify-center">
+          <div className="flex flex-col lg:flex-row w-full justify-center overflow-x-hidden">
             <img
               src={PMAward}
               alt=""

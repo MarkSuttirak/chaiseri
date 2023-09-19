@@ -46,7 +46,7 @@ function FirstWin2() {
           </p>
           <img
             src={firstWinGroup}
-            className="mx-auto max-w-[749px] mt-[100px]"
+            className="mx-auto max-w-[-webkit-fill-available] lg:max-w-[749px] mt-[40px] sm:mt-[100px]"
             alt=""
           />
         </section>

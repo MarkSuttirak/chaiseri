@@ -56,7 +56,7 @@ function FirstWinAfv() {
           </p>
           <img
             src={firstAfvGroup}
-            className="mx-auto max-w-[750px] mt-[60px] "
+            className="mx-auto max-w-[-webkit-fill-available] xl:max-w-[750px]  mt-[60px] "
             alt=""
           />
         </section>

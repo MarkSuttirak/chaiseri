@@ -265,7 +265,7 @@ export default function Header() {
                       leaveTo="opacity-0 translate-y-3"
                     >
                       <Popover.Panel className="absolute z-10 w-screen transform px-2 sm:px-0 left-0 w-[90%] m-auto flex justify-center">
-                        <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 w-[90%]">
+                        <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 w-[90%] mega-menu">
                           <div className="relative grid grid-cols-5 bg-white]">
                             {menus.map((item, index) => (
                               <div
@@ -279,12 +279,12 @@ export default function Header() {
                                   </p>
                                   <div className="flex flex-col gap-y-4 mt-4 ">
                                     {item.links.map((link) => (
-                                      <a
-                                        href={link.href}
+                                      <Link
+                                        to={link.href}
                                         className="text-base text-white font-semibold "
                                       >
                                         {link.text}
-                                      </a>
+                                      </Link>
                                     ))}
                                   </div>
                                 </div>
@@ -325,12 +325,19 @@ export default function Header() {
       </Popover>
       {menu && (
         <div className="bg-[#171A1E] h-screen w-[90%] z-10 right-0 absolute px-5 py-10 text-white xl:hidden shadow-sm">
-          <p onClick={()=> setComapnyMenu(!comapnyMenu)} className="text-white leading-[40px] uppercase font-semibold text-[20px]">
+          <p onClick={()=> setComapnyMenu(!comapnyMenu)} className="text-white leading-[40px] uppercase font-semibold text-[20px] flex justify-between">
             Company
+            <ChevronDownIcon
+              className={classNames(
+                productMenu ? "text-white rotate-180" : "text-white",
+                "ml-2 h-5 w-5 group-hover:text-black"
+              )}
+              aria-hidden="true"
+            />
           </p>
           {comapnyMenu && <div className="ml-6">
           {menusCompany.map((item) => (
-            <p> {item.name} </p>
+            <p className="text-white leading-[40px] uppercase font-semibold text-[20px]"> {item.name} </p>
             ))}
           </div>
       }
