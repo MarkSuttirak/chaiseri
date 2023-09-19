@@ -279,12 +279,12 @@ export default function Header() {
                                   </p>
                                   <div className="flex flex-col gap-y-4 mt-4 ">
                                     {item.links.map((link) => (
-                                      <a
-                                        href={link.href}
+                                      <Link
+                                        to={link.href}
                                         className="text-base text-white font-semibold "
                                       >
                                         {link.text}
-                                      </a>
+                                      </Link>
                                     ))}
                                   </div>
                                 </div>

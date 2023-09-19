@@ -82,19 +82,19 @@ export default function Footer() {
       </h2>
       <div className="mainFooter bg-black ">
       <div className="mx-auto  max-w-[1280px] px-4 pb-8 pt-16">
-        <div className="flex justify-between items-center flex-wrap lg:flex-nowrap pb-12 border-b border-[#717171]">
-          <div className="w-full lg:w-[33%]"> 
+        <div className="flex justify-between items-center flex-wrap sm:flex-nowrap sm:px-4 pb-12 border-b border-[#717171]">
+          <div className="w-full sm:w-[33%]"> 
           <img src={LogoCHAISERI} alt=""  className="-ml-[10px] lg:ml-0"/>
           </div>
             
-          <div className="w-full lg:w-[48%] mt-2 lg:mt-0"> 
-              <p className="text-[22px] leading-[22px] lg:text-right text-white">Ready to get started?</p>
+          <div className="w-full sm:w-[40%] xl:w-[48%] mt-2 lg:mt-0"> 
+              <p className="text-[22px] leading-[22px] sm:text-right sm:mr-2 text-white">Ready to get started?</p>
             </div>
-            <div className="lg:w-[18%] w-full lg:text-right mt-4 lg:mt-0"> 
+            <div className="sm:w-[26%] xl:w-[18%] w-full sm:text-right mt-4 lg:mt-0"> 
                 <button className="text-white text-[15px]  leading-[15px] bg-[#D73A32] px-[44px] py-[15px] uppercase">Contact Us</button>
             </div>
         </div>
-        <div className="xl:grid xl:grid-cols-3 xl:gap-8 mt-12">
+        <div className="sm:grid sm:grid-cols-3 sm:gap-20 mt-12 sm:px-8">
           <div className="space-y-8">
             
             <p className="text-[#cc2315] text-[19px] font-bold">
