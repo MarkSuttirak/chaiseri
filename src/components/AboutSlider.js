@@ -14,14 +14,14 @@ import GreenIndustryy from "../img/GREENINDUSTRYLEVEL2.png";
 // import "./styles.css";
 const responsive = {
   desktop: {
-    breakpoint: { max: 3000, min: 1024 },
+    breakpoint: { max: 3000, min: 1200 },
     items: 3,
     slidesToSlide: 1, // optional, default to 1.
   },
   tablet: {
-    breakpoint: { max: 1024, min: 768 },
-    items: 2,
-    slidesToSlide: 3, // optional, default to 1.
+    breakpoint: { max: 1100, min: 768 },
+    items: 1,
+    slidesToSlide: 1, // optional, default to 1.
   },
   mobile: {
     breakpoint: { max: 767, min: 464 },

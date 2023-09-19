@@ -44,52 +44,52 @@ const HomePage = () => {
         </section>
 
         <section>
-          <div className="flex flex-wrap w-full flex-col lg:flex-row">
-            <div className="lg:h-[480px] lg:w-[16.67%]">
+          <div className="flex flex-wrap w-full flex-col sm:flex-row">
+            <div className="sm:h-auto h-auto w-full sm:w-[50%] xl:w-[16%]">
               <img
                 src={imagesBanner[0]}
                 alt=""
-                className="h-full object-cover w-full"
+                className="h-full sm:h-[480px] object-cover w-full"
               />
               <h1 className="py-4 text-center text-2xl leading-[24px] font-semibold uppercase bg-[#D73A32] text-white">
                 System Integration
               </h1>
             </div>
-            <div className="lg:h-[480px] lg:w-[16.67%]">
+            <div className="sm:h-auto h-auto w-full sm:w-[50%]  xl:w-[16%]">
               <img
                 src={imagesBanner[1]}
                 alt=""
-                className="h-full object-cover w-full"
+                className="h-full sm:h-[480px] object-cover w-full"
               />
               <h1 className="p-4 text-center text-2xl leading-[24px] font-semibold uppercase bg-white text-black">
                 TRACK SYSTEM
               </h1>
             </div>
-            <div className="lg:h-[480px] lg:w-[32.33%]">
+            <div className="sm:h-auto h-auto w-full xl:w-[36%]">
               <img
                 src={imagesBanner[2]}
                 alt=""
-                className="h-full object-cover w-full"
+                className="h-full sm:h-[480px] object-cover w-full"
               />
               <h1 className="p-4  text-center text-2xl leading-[24px] font-semibold uppercase bg-[#2D2A4A] text-white">
                 Armored Vehicle
               </h1>
             </div>
-            <div className="lg:h-[480px] lg:w-[16.67%]">
+            <div className="sm:h-auto h-auto w-full sm:w-[50%] xl:w-[16%]">
               <img
                 src={imagesBanner[3]}
                 alt=""
-                className="h-full object-cover w-full"
+                className="h-full sm:h-[480px] object-cover w-full"
               />
               <h1 className="p-4 text-center text-2xl leading-[24px] font-semibold uppercase bg-white text-black">
                 Runflat
               </h1>
             </div>
-            <div className="lg:h-[480px] lg:w-[16.67%]">
+            <div className="sm:h-auto h-auto w-full sm:w-[50%] xl:w-[16%]">
               <img
                 src={imagesBanner[4]}
                 alt=""
-                className="h-full object-cover w-full"
+                className="h-full sm:h-[480px] object-cover w-full"
               />
               <h1 className="py-4 text-center text-2xl leading-[24px] font-semibold uppercase bg-[#D73A32] text-white">
                 Service
@@ -189,7 +189,7 @@ const HomePage = () => {
           <div className="flex flex-col lg:flex-row mx-auto justify-center items-center">
             <img src={LogoCHAISERI} className="" alt="" />
 
-            <h2 className="mt-2 text-[38px] sm:text-[46px] leading-[38px] sm:leading-[46px] font-bold text-[#D73A32]">
+            <h2 className="mt-2 text-[38px] ml-3 sm:text-[46px] leading-[38px] sm:leading-[46px] font-bold text-[#D73A32]">
               <span>SUCCESS</span>
             </h2>
           </div>
@@ -202,9 +202,9 @@ const HomePage = () => {
           </div>
 
           <div className=" ">
-            <div className="mx-auto max-w-7xl divide-y lg:divide-[#D73A32] lg:flex lg:justify-center lg:divide-y-0 lg:divide-x lg:py-8">
-              <div className="py-1 lg:w-1/3 lg:flex-none lg:py-0">
-                <div className="mx-auto flex max-w-xs items-center px-4 lg:max-w-none lg:px-8">
+            <div className="mx-auto max-w-7xl  sm:divide-[#D73A32] sm:flex lg:justify-center  sm:divide-x lg:py-8">
+              <div className="py-1 d lg:flex-none lg:py-0 ">
+                <div className="mx-auto flex max-w-xs items-center px-4 lg:max-w-none lg:px-8 pb-10">
                   <div className="ml-4 flex flex-auto flex-col">
                     <h3 className="font-medium text-[44px] leading-[44px] text-black uppercase">
                       since
@@ -215,8 +215,8 @@ const HomePage = () => {
                   </div>
                 </div>
               </div>
-              <div className="py-1 lg:w-1/3 lg:flex-none lg:py-0">
-                <div className="mx-auto flex max-w-xs items-center px-4 lg:max-w-none lg:px-8">
+              <div className="py-1 d lg:flex-none lg:py-0">
+                <div className="mx-auto flex max-w-xs items-center px-4 lg:max-w-none lg:px-8 pb-10">
                   <div className="ml-4 flex flex-auto flex-col">
                     <p className="text-[80px] sm-[120px] lg:text-[134px] leading-[120px] text-[#D73A32] font-medium">
                       40+
@@ -227,7 +227,7 @@ const HomePage = () => {
                   </div>
                 </div>
               </div>
-              <div className="py-1 lg:w-1/3 lg:flex-none lg:py-0">
+              <div className="py-1 d lg:flex-none lg:py-0">
                 <div className="mx-auto flex max-w-xs items-center px-4 lg:max-w-none lg:px-8">
                   <div className="ml-4 flex flex-auto flex-col">
                     <p className="text-[80px] sm-[120px] lg:text-[134px] leading-[120px] text-[#D73A32] font-medium">
@@ -273,7 +273,7 @@ const HomePage = () => {
             <div className="w-full lg:w-[40%] flex flex-col gap-y-5 justify-center items-start">
               <div className="awardsRightInnserSec flex justify-center bg-[#D73A32] w-full">
                 <div className="w-full lg:w-[380px] flex flex-col justify-center items-center lg:items-start  h-[50vh]">
-                  <h1 className="text-white text-[32px] lg:text-[60px] leading-[45px]  lg:leading-[84px] font-medium">
+                  <h1 className="text-white text-[32px] md:text-[60px] leading-[45px]  md:leading-[84px] font-medium">
                     News &Media
                   </h1>
                   <button className="py-4 px-7 mt-8 mb-2 bg-white text-[#D73A32] text-base leading-4 font-bold">

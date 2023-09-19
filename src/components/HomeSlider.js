@@ -8,12 +8,12 @@ import FIRSTWINALV from "../img/FIRSTWINALV.png";
 // import "./styles.css";
 const responsive = {
   desktop: {
-    breakpoint: { max: 3000, min: 1024 },
+    breakpoint: { max: 3000, min: 1000 },
     items: 3,
     slidesToSlide: 1, // optional, default to 1.
   },
   tablet: {
-    breakpoint: { max: 1024, min: 768 },
+    breakpoint: { max: 999, min: 768 },
     items: 2,
     slidesToSlide: 3, // optional, default to 1.
   },
@@ -53,7 +53,7 @@ const HomeSlider = () => {
     <div className="parent align-middle">
       <Carousel
         responsive={responsive}
-        autoPlay={true}
+        // autoPlay={true}
         autoPlaySpeed = {4000}
         swipeable={true}
         draggable={true}

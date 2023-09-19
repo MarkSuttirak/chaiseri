@@ -275,9 +275,9 @@ const AboutUs = () => {
           </div>
         </section>
 
-        <section className="container mx-auto max-w-[1600px] px-6 lg:m-[120px]">
+        <section className=" mx-auto px-6 lg:m-[120px]">
           <div className="flex flex-col text-center w-full">
-            <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-[46px] text-[#2D2A4A]">CORPORATE SOCIAL RESPONSIBILITY</h2>
+            <h2 className="mt-2 text-3xl font-bold tracking-tight lg:text-[46px] sm:text-[35px] text-[#2D2A4A]">CORPORATE SOCIAL RESPONSIBILITY</h2>
             <p className="text-[22px] leading- text-[#a51931]">
             Chaiseri serve local community
             </p>
@@ -287,10 +287,10 @@ const AboutUs = () => {
               {csractivities.map((activity) => (
                 <li key={activity.source} className="relative flex flex-col gap-y-3">
                   <div className="group block w-full overflow-hidden rounded-sm">
-                    <img src={activity.source} alt="" className="pointer-events-none"/>
+                    <img src={activity.source} alt="" className="w-full pointer-events-none lg:mx-0 mx-auto"/>
                   </div>
                   <h2 className="font-semibold tracking-tight text-center lg:text-left text-4xl text-[#D73A32]">{activity.title}</h2>
-                  <p className="pointer-events-none block text-base font-medium text-[#262626]">{activity.desc}</p>
+                  <p className="pointer-events-none block text-base lg:text-left text-center font-medium text-[#262626]">{activity.desc}</p>
                 </li>
               ))}
             </ul>
@@ -309,7 +309,7 @@ const AboutUs = () => {
                     <img src={award.source} alt="" className="pointer-events-none mx-auto"/>
                   </div>
                   <h2 className="mt-5 font-semibold tracking-tight text-center lg:text-left text-3xl text-[#D73A32]">{award.title}</h2>
-                  <p className="pointer-events-none block text-base font-medium text-[#262626]">{award.desc}</p>
+                  <p className="pointer-events-none block text-base lg:text-left text-center font-medium text-[#262626]">{award.desc}</p>
                 </li>
               ))}
             </ul>

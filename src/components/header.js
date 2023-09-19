@@ -174,7 +174,7 @@ export default function Header() {
                 <img className="h-8 w-auto sm:h-12" src={LogoCHAISERI} alt="" />
               </a>
             </div>
-            <div className="-my-2 -mr-2 lg:hidden">
+            <div className="-my-2 -mr-2 xl:hidden">
               <button
                 onClick={() => setMenu(!menu)}
                 className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-black focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
@@ -184,7 +184,7 @@ export default function Header() {
               </button>
             </div>
 
-            <Popover.Group as="nav" className="hidden space-x-16 lg:flex">
+            <Popover.Group as="nav" className="hidden space-x-16 xl:flex">
             <Popover className='relative'>
                 {({ open }) => (
                   <>
@@ -324,7 +324,7 @@ export default function Header() {
         </div>
       </Popover>
       {menu && (
-        <div className="bg-[#171A1E] h-screen w-[90%] z-10 right-0 absolute px-5 py-10 text-white lg:hidden shadow-sm">
+        <div className="bg-[#171A1E] h-screen w-[90%] z-10 right-0 absolute px-5 py-10 text-white xl:hidden shadow-sm">
           <p onClick={()=> setComapnyMenu(!comapnyMenu)} className="text-white leading-[40px] uppercase font-semibold text-[20px]">
             Company
           </p>
