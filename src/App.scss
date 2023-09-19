@@ -8,6 +8,13 @@ $main_color: #d73a32;
   text-decoration: underline;
 }
 
+.react-multi-carousel-list {
+  cursor:grab;
+  &:active {
+    cursor: grabbing;
+  }
+}
+
 .each-slide-effect > div {
   display: flex;
   align-items: center;
