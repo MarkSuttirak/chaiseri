@@ -325,12 +325,19 @@ export default function Header() {
       </Popover>
       {menu && (
         <div className="bg-[#171A1E] h-screen w-[90%] z-10 right-0 absolute px-5 py-10 text-white xl:hidden shadow-sm">
-          <p onClick={()=> setComapnyMenu(!comapnyMenu)} className="text-white leading-[40px] uppercase font-semibold text-[20px]">
+          <p onClick={()=> setComapnyMenu(!comapnyMenu)} className="text-white leading-[40px] uppercase font-semibold text-[20px] flex justify-between">
             Company
+            <ChevronDownIcon
+              className={classNames(
+                productMenu ? "text-white rotate-180" : "text-white",
+                "ml-2 h-5 w-5 group-hover:text-black"
+              )}
+              aria-hidden="true"
+            />
           </p>
           {comapnyMenu && <div className="ml-6">
           {menusCompany.map((item) => (
-            <p> {item.name} </p>
+            <p className="text-white leading-[40px] uppercase font-semibold text-[20px]"> {item.name} </p>
             ))}
           </div>
       }
