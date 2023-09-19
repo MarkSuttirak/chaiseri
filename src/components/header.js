@@ -265,7 +265,7 @@ export default function Header() {
                       leaveTo="opacity-0 translate-y-3"
                     >
                       <Popover.Panel className="absolute z-10 w-screen transform px-2 sm:px-0 left-0 w-[90%] m-auto flex justify-center">
-                        <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 w-[90%]">
+                        <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 w-[90%] mega-menu">
                           <div className="relative grid grid-cols-5 bg-white]">
                             {menus.map((item, index) => (
                               <div

@@ -4,6 +4,10 @@ $main_color: #d73a32;
   font-family: Barlow;
 }
 
+.mega-menu a:hover {
+  text-decoration: underline;
+}
+
 .each-slide-effect > div {
   display: flex;
   align-items: center;
