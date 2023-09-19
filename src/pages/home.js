@@ -204,7 +204,7 @@ const HomePage = () => {
           <div className=" ">
             <div className="mx-auto max-w-7xl  sm:divide-[#D73A32] sm:flex lg:justify-center  sm:divide-x lg:py-8">
               <div className="py-1 d lg:flex-none lg:py-0 ">
-                <div className="mx-auto flex max-w-xs items-center px-4 lg:max-w-none lg:px-8 pb-10">
+                <div className="mx-auto flex max-w-xs items-center px-4 lg:max-w-none lg:px-8 sm:pr-0 pb-10">
                   <div className="ml-4 flex flex-auto flex-col">
                     <h3 className="font-medium text-[44px] leading-[44px] text-black uppercase">
                       since
@@ -215,25 +215,25 @@ const HomePage = () => {
                   </div>
                 </div>
               </div>
-              <div className="py-1 d lg:flex-none lg:py-0">
+              <div className="py-1 d lg:flex-none lg:py-0 sm:ml-2">
                 <div className="mx-auto flex max-w-xs items-center px-4 lg:max-w-none lg:px-8 pb-10">
-                  <div className="ml-4 flex flex-auto flex-col">
+                  <div className="ml-4 sm:ml-0 xl:ml-4  flex flex-auto flex-col">
                     <p className="text-[80px] sm-[120px] lg:text-[134px] leading-[120px] text-[#D73A32] font-medium">
                       40+
                     </p>
-                    <h3 className="font-medium text-[44px] leading-[44px] mt-10 text-black uppercase">
+                    <h3 className="font-medium  text-[44px] leading-[44px] mt-10 text-black uppercase">
                       Countries
                     </h3>
                   </div>
                 </div>
               </div>
               <div className="py-1 d lg:flex-none lg:py-0">
-                <div className="mx-auto flex max-w-xs items-center px-4 lg:max-w-none lg:px-8">
-                  <div className="ml-4 flex flex-auto flex-col">
+                <div className="mx-auto flex max-w-xs items-center px-4 lg:max-w-none sm:pr-0 lg:px-8">
+                  <div className="ml-4 sm:ml-0 xl:ml-4 flex flex-auto flex-col">
                     <p className="text-[80px] sm-[120px] lg:text-[134px] leading-[120px] text-[#D73A32] font-medium">
                       6
                     </p>
-                    <h3 className="font-medium text-[44px] leading-[44px] mt-10 text-black uppercase">
+                    <h3 className="font-medium  text-[44px] leading-[44px] mt-10 text-black uppercase">
                       Continents
                     </h3>
                   </div>
