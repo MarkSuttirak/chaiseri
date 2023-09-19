@@ -337,7 +337,9 @@ export default function Header() {
           </p>
           {comapnyMenu && <div className="ml-6">
           {menusCompany.map((item) => (
-            <p className="text-white leading-[40px] uppercase font-semibold text-[20px]"> {item.name} </p>
+            <p className="text-white leading-[40px] uppercase font-semibold text-[20px]"> 
+            <Link to={item.href}>{item.name} </Link>
+            </p>
             ))}
           </div>
       }
@@ -374,7 +376,8 @@ export default function Header() {
                   {openMenuIndex === index && (
                     <div className="ml-6">
                       {item.links.map((itemLink) => (
-                         <p className="text-white leading-[40px] uppercase font-semibold text-[20px]" key={itemLink.id}>{itemLink.text}</p>
+                        
+                         <p className="text-white leading-[40px] uppercase font-semibold text-[20px]" key={itemLink.id}><Link to={itemLink.href}>{itemLink.text}</Link></p>
                       ))}
                     </div>
                   )}
@@ -382,17 +385,18 @@ export default function Header() {
               ))}
             </div>
           )}
-          <p className="text-white leading-[40px] uppercase font-semibold text-[20px]">
-            Company
+          
+          <p className="text-white leading-[40px] uppercase font-semibold text-[20px] a">
+            <Link to="/service">Service</Link>
+            
           </p>
-          <p className="text-white leading-[40px] uppercase font-semibold text-[20px]">
-            Service
+          <p className="text-white leading-[40px] uppercase font-semibold text-[20px] b">
+            
+            <Link to="/news-media">News and Media</Link>
           </p>
-          <p className="text-white leading-[40px] uppercase font-semibold text-[20px]">
-            News and Media
-          </p>
-          <p className="text-white leading-[40px] uppercase font-semibold text-[20px]">
-            Contact
+          <p className="text-white leading-[40px] uppercase font-semibold text-[20px] c">
+            
+            <Link to="/contact-us">Contact</Link>
           </p>
         </div>
       )}
