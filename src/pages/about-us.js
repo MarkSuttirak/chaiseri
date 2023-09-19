@@ -275,7 +275,7 @@ const AboutUs = () => {
           </div>
         </section>
 
-        <section className=" mx-auto px-6 lg:my-[120px]">
+        <section className=" mx-auto px-6 xl:px-0 max-w-[1300px] lg:my-[120px]">
           <div className="flex flex-col text-center w-full">
             <h2 className="mt-2 text-3xl font-bold tracking-tight lg:text-[46px] sm:text-[35px] text-[#2D2A4A]">CORPORATE SOCIAL RESPONSIBILITY</h2>
             <p className="text-[22px] leading- text-[#a51931]">
@@ -289,7 +289,7 @@ const AboutUs = () => {
                   <div className="group block w-full overflow-hidden rounded-sm">
                     <img src={activity.source} alt="" className="w-full pointer-events-none lg:mx-0 mx-auto"/>
                   </div>
-                  <h2 className="font-semibold tracking-tight text-center lg:text-left text-4xl text-[#D73A32]">{activity.title}</h2>
+                  <h2 className="font-semibold tracking-tight text-center lg:text-left text-[32px] text-[#D73A32]">{activity.title}</h2>
                   <p className="pointer-events-none block text-base lg:text-left text-center font-medium text-[#262626]">{activity.desc}</p>
                 </li>
               ))}
@@ -297,7 +297,7 @@ const AboutUs = () => {
           </div>
         </section>
 
-        <section className="container mx-auto max-w-[1600px] px-6 m-[120px]">
+        <section className="container mx-auto max-w-[1300px] px-6 xl:px-0 my-[120px]">
           <div className="text-center w-full">
             <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-[46px] text-[#2D2A4A]">AWARDS</h2>
           </div>
