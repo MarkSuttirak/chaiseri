@@ -326,8 +326,8 @@ const AboutUs = () => {
 
         
 
-        <section className="container  px-6 py-20  bg-[#EFEFEF]">
-          <div className=" max-w-[1280px] mx-auto">
+        <section className="  px-6 py-20  bg-[#EFEFEF]">
+          <div className=" container max-w-[1280px] mx-auto">
           <ul role="list" className="grid grid-cols-1 lg:grid-cols-3 gap-x-5 gap-y-10">
             {awardsTwo.map((award) => (
               <li key={award.source} className="relative flex flex-col gap-y-3">
