@@ -191,12 +191,12 @@ const AboutUs = () => {
 
       <main className="bg-[#FAFBFC]">
         <section className='h-[520px] flex items-center mb-[50px] coverCenter' style={{background:`url('${AboutUsBannerImg}')`}}>
-          <div className="container mx-auto max-w-[1270px] lg:text-center xl:text-left lg:px-0 px-6">
+          <div className="container mx-auto max-w-[1140px] lg:text-center xl:text-left lg:px-0 px-6">
             <h1 className="text-white text-6xl font-bold">ABOUT US</h1>
           </div>
         </section>
 
-        <section className="container mx-auto max-w-[1280px] mt-20 px-6 lg:px-8 xl:px-0 ">
+        <section className="container mx-auto max-w-[1140px] mt-20 px-6 lg:px-8 xl:px-0 ">
           <p className="font-medium text-black">Chaiseri is a Thai company specialize in Defense Land system for Armored vehicle, Tracks system, Runflat, and maintenance, upgrading service for military vehicle. We design, manufacture, recondition, upgrade military vehicle and its subsystem to meet satisfaction of the growing needs of armed forces and internal security organization. Our product and service under brand “Chaiseri” has been delivered to 6 continents, more than 40 countries. Helping to maintain the peace of nations and increasing land system readiness to the end user defense forces, we have experienced in the business since 1968 (B.E. 2511)</p>
           <p className="mt-4 font-medium text-black">CHAISERI production facility, area of 140,000 sqm, located in industrial district, Pathumthani, Thailand, 40 km North from Bangkok city center and 50 km to seaport. We have various type of machine from latest state of the art CNC machine, various type of cutting machine, pressing machine, dynamometer test, various type of test machine, sand blasting room, paint / coating room and oven, rubber forming and etc. We have system integration engineer and technician more than 30 peoples and various type of machine for service customer. Product and Service are categorized in to 5 segments.</p>
           <ol className="list-decimal ml-8 mt-4 space-y-1">
@@ -208,7 +208,7 @@ const AboutUs = () => {
           </ol>
         </section>
 
-        <section className="container mx-auto max-w-[1280px] px-6 xl:px-0 lg:flex gap-x-2 lg:my-[120px] m-[70px]">
+        <section className="container mx-auto max-w-[1140px] px-6 xl:px-0 lg:flex gap-x-2 lg:my-[120px] m-[70px]">
           <div className="lg:w-1/3 pb-[10px]">
             <h2 className="font-bold tracking-tight text-center lg:text-left text-5xl text-[#2d2a4a]">VISION</h2>
           </div>
@@ -218,7 +218,7 @@ const AboutUs = () => {
           </div>
         </section>
 
-        <section className="container mx-auto max-w-[1280px] px-6 xl:px-0 lg:flex gap-x-2 lg:my-[120px] m-[70px]">
+        <section className="container mx-auto max-w-[1140px] px-6 xl:px-0 lg:flex gap-x-2 lg:my-[120px] m-[70px]">
           <div className="lg:w-1/3 pb-[10px]">
             <h2 className="font-bold tracking-tight text-center lg:text-left text-5xl text-[#D73A32]">OUR VALUES</h2>
           </div>
@@ -245,7 +245,7 @@ const AboutUs = () => {
           </div>
         </section>
 
-        <section className="container mx-auto max-w-[1280px] px-6 xl:px-0 lg:flex gap-x-2 lg:my-[120px] ">
+        <section className="container mx-auto max-w-[1140px] px-6 xl:px-0 lg:flex gap-x-2 lg:my-[120px] ">
           <div className="lg:w-1/3 pb-[10px]">
             <h2 className="font-bold tracking-tight text-center lg:text-left text-[42px] lg:text-[46px] text-[#2d2a4a]">MISSION</h2>
           </div>
@@ -254,7 +254,7 @@ const AboutUs = () => {
           </div>
         </section>
 
-        <section className="container mx-auto max-w-[1280px] px-6 xl:px-0 lg:flex gap-x-2 lg:my-[120px] m-[70px] ">
+        <section className="container mx-auto max-w-[1140px] px-6 xl:px-0 lg:flex gap-x-2 lg:my-[120px] m-[70px] ">
           <div className="lg:w-1/3 pb-[10px]">
             <h2 className="font-bold tracking-tight text-center lg:text-left text-[42px] lg:text-[46px] text-[#2d2a4a]">QUALITY ASSURANCE</h2>
           </div>
@@ -265,7 +265,7 @@ const AboutUs = () => {
           </div>
         </section>
 
-        <section className="container mx-auto max-w-[1280px] px-6 xl:px-0 lg:flex lg:my-[120px] m-[70px] lg:h-[600px]">
+        <section className="container mx-auto max-w-[1140px] px-6 xl:px-0 lg:flex lg:my-[120px] m-[70px] lg:h-[600px]">
           <div className="lg:w-2/3">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15482.881382754513!2d100.48955700000002!3d14.034584!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e28774cf00127f%3A0xa9d78fc5ed1d4d36!2sChaiseri%20Metal%20%26%20Rubber%20Co.%2CLTD.!5e0!3m2!1sen!2sus!4v1694491001693!5m2!1sen!2sus" className="border-0 w-full lg:h-full h-[300px]" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
