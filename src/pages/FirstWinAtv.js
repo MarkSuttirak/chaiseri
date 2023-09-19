@@ -45,7 +45,7 @@ function FirstWinAtv() {
             Win ATV is ideal solution for cross country and city use where
             mobility and protection is priority.
           </p>
-          <img src={FWATV2} className="mx-auto max-w-[749px] mt-[100px]" alt="" />
+          <img src={FWATV2} className="mx-auto max-w-[-webkit-fill-available] lg:max-w-[749px] mt-[40px] sm:mt-[100px]" alt="" />
         </section>
 
         <section className='pb-28 max-w-[1280px] mx-auto'>
