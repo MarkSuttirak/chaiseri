@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import ImgSlider from "../components/imgslider";
@@ -275,9 +276,11 @@ const HomePage = () => {
                 <div className="w-full lg:w-[380px] flex flex-col justify-center items-center lg:items-start  h-[50vh]">
                   <h1 className="text-white text-[32px] md:text-[60px] leading-[45px]  md:leading-[84px] font-medium">
                     News &Media
+                    
                   </h1>
                   <button className="py-4 px-7 mt-8 mb-2 bg-white text-[#D73A32] text-base leading-4 font-bold">
-                    View more
+                    
+                    <Link to="/news-media">View more</Link>
                   </button>
                 </div>
               </div>

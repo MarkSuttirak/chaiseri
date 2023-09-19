@@ -169,10 +169,10 @@ export default function Header() {
         <div className="mx-auto max-w-[1310px]">
           <div className="flex items-center justify-between lg:h-[120px]  py-6 lg:justify-start md:space-x-10 px-6">
             <div className="flex justify-start lg:w-0 lg:flex-1">
-              <a href="/">
+              <Link to="/">
                 <span className="sr-only">Your Company</span>
                 <img className="h-8 w-auto sm:h-12" src={LogoCHAISERI} alt="" />
-              </a>
+              </Link>
             </div>
             <div className="-my-2 -mr-2 xl:hidden">
               <button
