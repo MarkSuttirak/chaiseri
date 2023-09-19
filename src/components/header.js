@@ -169,10 +169,10 @@ export default function Header() {
         <div className="mx-auto max-w-[1310px]">
           <div className="flex items-center justify-between lg:h-[120px]  py-6 lg:justify-start md:space-x-10 px-6">
             <div className="flex justify-start lg:w-0 lg:flex-1">
-              <a href="/">
+              <Link to="/">
                 <span className="sr-only">Your Company</span>
                 <img className="h-8 w-auto sm:h-12" src={LogoCHAISERI} alt="" />
-              </a>
+              </Link>
             </div>
             <div className="-my-2 -mr-2 xl:hidden">
               <button
@@ -337,7 +337,9 @@ export default function Header() {
           </p>
           {comapnyMenu && <div className="ml-6">
           {menusCompany.map((item) => (
-            <p className="text-white leading-[40px] uppercase font-semibold text-[20px]"> {item.name} </p>
+            <p className="text-white leading-[40px] uppercase font-semibold text-[20px]"> 
+            <Link to={item.href}>{item.name} </Link>
+            </p>
             ))}
           </div>
       }
@@ -374,7 +376,8 @@ export default function Header() {
                   {openMenuIndex === index && (
                     <div className="ml-6">
                       {item.links.map((itemLink) => (
-                         <p className="text-white leading-[40px] uppercase font-semibold text-[20px]" key={itemLink.id}>{itemLink.text}</p>
+                        
+                         <p className="text-white leading-[40px] uppercase font-semibold text-[20px]" key={itemLink.id}><Link to={itemLink.href}>{itemLink.text}</Link></p>
                       ))}
                     </div>
                   )}
@@ -382,17 +385,18 @@ export default function Header() {
               ))}
             </div>
           )}
-          <p className="text-white leading-[40px] uppercase font-semibold text-[20px]">
-            Company
+          
+          <p className="text-white leading-[40px] uppercase font-semibold text-[20px] a">
+            <Link to="/service">Service</Link>
+            
           </p>
-          <p className="text-white leading-[40px] uppercase font-semibold text-[20px]">
-            Service
+          <p className="text-white leading-[40px] uppercase font-semibold text-[20px] b">
+            
+            <Link to="/news-media">News and Media</Link>
           </p>
-          <p className="text-white leading-[40px] uppercase font-semibold text-[20px]">
-            News and Media
-          </p>
-          <p className="text-white leading-[40px] uppercase font-semibold text-[20px]">
-            Contact
+          <p className="text-white leading-[40px] uppercase font-semibold text-[20px] c">
+            
+            <Link to="/contact-us">Contact</Link>
           </p>
         </div>
       )}

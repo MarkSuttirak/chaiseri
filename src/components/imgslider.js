@@ -16,7 +16,7 @@ const ImgSlider = () => {
 
 
   const mobileImages = [
-
+    home1,
     home2,
     home3,
     home4,

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import ImgSlider from "../components/imgslider";
@@ -204,7 +205,7 @@ const HomePage = () => {
           <div className=" ">
             <div className="mx-auto max-w-7xl  sm:divide-[#D73A32] sm:flex lg:justify-center  sm:divide-x lg:py-8">
               <div className="py-1 d lg:flex-none lg:py-0 ">
-                <div className="mx-auto flex max-w-xs items-center px-4 lg:max-w-none lg:px-8 pb-10">
+                <div className="mx-auto flex max-w-xs items-center px-4 lg:max-w-none lg:px-8 sm:pr-0 pb-10">
                   <div className="ml-4 flex flex-auto flex-col">
                     <h3 className="font-medium text-[44px] leading-[44px] text-black uppercase">
                       since
@@ -215,25 +216,25 @@ const HomePage = () => {
                   </div>
                 </div>
               </div>
-              <div className="py-1 d lg:flex-none lg:py-0">
+              <div className="py-1 d lg:flex-none lg:py-0 sm:ml-2">
                 <div className="mx-auto flex max-w-xs items-center px-4 lg:max-w-none lg:px-8 pb-10">
-                  <div className="ml-4 flex flex-auto flex-col">
-                    <p className="text-[80px] sm-[120px] lg:text-[134px] leading-[120px] text-[#D73A32] font-medium">
+                  <div className="ml-4 sm:ml-0 xl:ml-4  flex flex-auto flex-col">
+                    <p className="text-[80px] sm-[120px] lg:text-[133px] leading-[120px] text-[#D73A32] font-medium">
                       40+
                     </p>
-                    <h3 className="font-medium text-[44px] leading-[44px] mt-10 text-black uppercase">
+                    <h3 className="font-medium  text-[44px] leading-[44px] mt-10 text-black uppercase">
                       Countries
                     </h3>
                   </div>
                 </div>
               </div>
               <div className="py-1 d lg:flex-none lg:py-0">
-                <div className="mx-auto flex max-w-xs items-center px-4 lg:max-w-none lg:px-8">
-                  <div className="ml-4 flex flex-auto flex-col">
+                <div className="mx-auto flex max-w-xs items-center px-4 lg:max-w-none sm:pr-0 lg:px-8">
+                  <div className="ml-4 sm:ml-0 xl:ml-4 flex flex-auto flex-col">
                     <p className="text-[80px] sm-[120px] lg:text-[134px] leading-[120px] text-[#D73A32] font-medium">
                       6
                     </p>
-                    <h3 className="font-medium text-[44px] leading-[44px] mt-10 text-black uppercase">
+                    <h3 className="font-medium  text-[44px] leading-[44px] mt-10 text-black uppercase">
                       Continents
                     </h3>
                   </div>
@@ -275,9 +276,11 @@ const HomePage = () => {
                 <div className="w-full lg:w-[380px] flex flex-col justify-center items-center lg:items-start  h-[50vh]">
                   <h1 className="text-white text-[32px] md:text-[60px] leading-[45px]  md:leading-[84px] font-medium">
                     News &Media
+                    
                   </h1>
                   <button className="py-4 px-7 mt-8 mb-2 bg-white text-[#D73A32] text-base leading-4 font-bold">
-                    View more
+                    
+                    <Link to="/news-media">View more</Link>
                   </button>
                 </div>
               </div>
